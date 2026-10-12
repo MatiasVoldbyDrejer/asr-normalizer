@@ -1,0 +1,69 @@
+[build-system]
+requires = ["hatchling>=1.27"]
+build-backend = "hatchling.build"
+
+[project]
+name = "asr-normalizer"
+dynamic = ["version"]
+description = "The text normalizer behind the Open ASR Leaderboard and the Open TTS Leaderboard (Whisper's normalizer plus the leaderboard's patches)."
+readme = "README.md"
+requires-python = ">=3.9"
+license = "Apache-2.0"
+license-files = ["LICENSE"]
+authors = [
+    { name = "Hugging Face audio team" },
+    { name = "The Agentic Data Company (Matias Voldby Drejer)" },
+]
+keywords = ["asr", "speech-recognition", "wer", "text-normalization", "whisper", "leaderboard", "tts"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Science/Research",
+    "Natural Language :: English",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: Multimedia :: Sound/Audio :: Speech",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+    "Topic :: Text Processing :: Linguistic",
+]
+dependencies = [
+    "regex",
+    "num2words",
+]
+
+[project.optional-dependencies]
+dev = ["pytest"]
+
+[project.scripts]
+asr-normalize = "asr_normalizer.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/MatiasVoldbyDrejer/asr-normalizer"
+Repository = "https://github.com/MatiasVoldbyDrejer/asr-normalizer"
+Issues = "https://github.com/MatiasVoldbyDrejer/asr-normalizer/issues"
+Changelog = "https://github.com/MatiasVoldbyDrejer/asr-normalizer/blob/main/CHANGELOG.md"
+
+[tool.hatch.version]
+path = "asr_normalizer/__init__.py"
+
+[tool.hatch.build.targets.wheel]
+packages = ["asr_normalizer"]
+
+[tool.hatch.build.targets.sdist]
+include = [
+    "/asr_normalizer",
+    "/tests",
+    "/scripts",
+    "/README.md",
+    "/CHANGELOG.md",
+    "/LICENSE",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
