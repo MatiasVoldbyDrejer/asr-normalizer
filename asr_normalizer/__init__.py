@@ -1,7 +1,8 @@
 """asr-normalizer: the text normalizer used by the Open ASR Leaderboard.
 
 Originally OpenAI Whisper's text normalizer, plus the leaderboard's patches. Extracted verbatim
-from huggingface/open_asr_leaderboard@60e2e3b. The Open TTS Leaderboard is migrating to it.
+from huggingface/open_asr_leaderboard@60e2e3b. The Open TTS Leaderboard has a pending pull request
+to adopt it.
 
     >>> from asr_normalizer import normalize
     >>> normalize("I've got 2 cats, uh, at 3:00 PM")

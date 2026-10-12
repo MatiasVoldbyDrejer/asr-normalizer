@@ -1,9 +1,12 @@
 # asr-normalizer
 
 The text normalizer used by the [Open ASR Leaderboard](https://huggingface.co/spaces/hf-audio/open_asr_leaderboard),
-as a standalone package. The [Open TTS Leaderboard](https://huggingface.co/spaces/hf-audio/open_tts_leaderboard) is
-migrating to it from its own, older copy of this code; the switch changes some TTS outputs, as measured in the
-TTS leaderboard's migration pull request.
+as a standalone package. The leaderboard's pull request to adopt the package is
+[huggingface/open_asr_leaderboard#240](https://github.com/huggingface/open_asr_leaderboard/pull/240). The
+[Open TTS Leaderboard](https://huggingface.co/spaces/hf-audio/open_tts_leaderboard) has its own, older copy of this
+code and a pending pull request to adopt the package,
+[huggingface/open-tts-leaderboard#8](https://github.com/huggingface/open-tts-leaderboard/pull/8), which measures how
+the switch changes TTS outputs.
 
 Before word error rate (WER) is computed, both the reference transcript and the model's output are passed through
 this normalizer, so that casing, punctuation, filler words, number formatting, and British/American spelling don't
@@ -167,4 +170,5 @@ The fixture diff is what reviewers check.
 
 ## License
 
-Apache-2.0 (see [LICENSE](LICENSE) and [NOTICE](NOTICE)). Copyright the OpenAI team, the Hugging Face team and contributors.
+Apache-2.0 (see [LICENSE](https://github.com/MatiasVoldbyDrejer/asr-normalizer/blob/main/LICENSE) and
+[NOTICE](https://github.com/MatiasVoldbyDrejer/asr-normalizer/blob/main/NOTICE)). Copyright the OpenAI team, the Hugging Face team and contributors.

@@ -5,7 +5,7 @@ build-backend = "hatchling.build"
 [project]
 name = "asr-normalizer"
 dynamic = ["version"]
-description = "The text normalizer used by the Open ASR Leaderboard (Whisper's normalizer plus the leaderboard's patches); the Open TTS Leaderboard is migrating to it."
+description = "The text normalizer used by the Open ASR Leaderboard (Whisper's normalizer plus the leaderboard's patches); the Open TTS Leaderboard has a pending pull request to adopt it."
 readme = "README.md"
 requires-python = ">=3.9"
 license = "Apache-2.0"
