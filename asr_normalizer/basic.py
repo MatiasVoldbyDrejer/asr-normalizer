@@ -21,6 +21,15 @@ import unicodedata
 
 import regex
 
+__all__ = [
+    "ADDITIONAL_DIACRITICS",
+    "remove_symbols_and_diacritics",
+    "remove_symbols",
+    "remove_symbols_keep_marks",
+    "BasicTextNormalizer",
+    "BasicMultilingualTextNormalizer",
+]
+
 
 # non-ASCII letters that are not separated by "NFKD" normalization
 ADDITIONAL_DIACRITICS = {

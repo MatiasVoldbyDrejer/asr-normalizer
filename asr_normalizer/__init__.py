@@ -1,12 +1,14 @@
-"""asr-normalizer: the text normalizer behind the Open ASR Leaderboard and the Open TTS Leaderboard.
+"""asr-normalizer: the text normalizer used by the Open ASR Leaderboard.
 
 Originally OpenAI Whisper's text normalizer, plus the leaderboard's patches. Extracted verbatim
-from huggingface/open_asr_leaderboard@60e2e3b.
+from huggingface/open_asr_leaderboard@60e2e3b. The Open TTS Leaderboard is migrating to it.
 
     >>> from asr_normalizer import normalize
     >>> normalize("I've got 2 cats, uh, at 3:00 PM")
     'i have got 2 cats at 3 pm'
 """
+
+from typing import Optional
 
 __version__ = "0.1.0"
 
@@ -33,7 +35,7 @@ _EN = EnglishTextNormalizer()
 _ML = MultilingualNormalizer(remove_diacritics=False)
 
 
-def normalize(text: str, lang: str = "en") -> str:
+def normalize(text: str, lang: Optional[str] = "en") -> str:
     """Normalize ``text`` exactly as the Open ASR Leaderboard does at scoring time.
 
     ``lang == "en"`` uses ``EnglishTextNormalizer()``; any other value (including ``None``)

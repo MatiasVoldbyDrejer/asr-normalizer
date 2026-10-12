@@ -7,8 +7,15 @@ expected value is produced by running huggingface/open_asr_leaderboard's ``norma
 (commit 60e2e3b) in a subprocess with ``PYTHONPATH=<source repo>``. This process never
 imports the original package or ``asr_normalizer``.
 
-    python scripts/make_unit_cases.py            # rewrite tests/_unit_cases.py
-    python scripts/make_unit_cases.py --check    # exit 1 if the file is out of date
+Requirements: the interpreter given by ``--python`` (default: this one) must be able to import the
+ORIGINAL ``normalizer`` package, i.e. have ``datasets``, ``huggingface_hub``, ``kaldialign``,
+``num2words`` and ``regex`` installed (``normalizer.data_utils`` / ``eval_utils`` import them at
+module level).
+
+Usage (``--source-repo PATH`` is required unless ``ASR_NORMALIZER_SOURCE_REPO`` is set; PATH is a clone
+of huggingface/open_asr_leaderboard at commit 60e2e3b):
+    python scripts/make_unit_cases.py --source-repo PATH            # rewrite tests/_unit_cases.py
+    python scripts/make_unit_cases.py --source-repo PATH --check    # exit 1 if the file is out of date
 """
 
 from __future__ import annotations
@@ -276,7 +283,13 @@ def run_original(source_repo: Path, python: str) -> dict:
         req, resp = Path(td) / "req.json", Path(td) / "resp.json"
         req.write_text(json.dumps({"groups": groups, "pairs": PAIR_CASES}, ensure_ascii=False), encoding="utf-8")
         env = dict(os.environ, PYTHONPATH=str(source_repo), PYTHONDONTWRITEBYTECODE="1")
-        subprocess.run([python, "-c", WORKER, str(req), str(resp)], check=True, env=env, cwd=str(source_repo))
+        try:
+            subprocess.run([python, "-c", WORKER, str(req), str(resp)], check=True, env=env, cwd=str(source_repo),
+                           stderr=subprocess.PIPE, text=True, encoding="utf-8", errors="replace")
+        except subprocess.CalledProcessError as e:
+            # Print only the worker's stderr: the CalledProcessError message would embed the whole worker source.
+            sys.stderr.write(e.stderr or "")
+            sys.exit(e.returncode if e.returncode > 0 else 1)
         return json.loads(resp.read_text(encoding="utf-8"))
 
 

@@ -1,10 +1,13 @@
 """Public API of asr_normalizer (see SPEC): exports, version, routing of normalize(), CLI."""
 
 import importlib
+import importlib.metadata
 import inspect
 import os
+import shutil
 import subprocess
 import sys
+import sysconfig
 
 import pytest
 from _unit_cases import CASES, META
@@ -49,7 +52,7 @@ def test_export_exists(name):
 
 
 def test_version():
-    assert asr_normalizer.__version__ == "0.1.0"
+    assert asr_normalizer.__version__ == importlib.metadata.version("asr-normalizer")
 
 
 @pytest.mark.parametrize("module", SUBMODULES)
@@ -135,13 +138,17 @@ def _cli_command():
 CLI_LINES = ["Mr. Smith's colour is grey.", "uh twenty one dollars", "", "c o 2 emissions", "[noise] (laughs) ok"]
 
 
+def _run(cmd, stdin=None):
+    env = dict(os.environ, PYTHONIOENCODING="utf-8", PYTHONUTF8="1")
+    return subprocess.run(cmd, input=stdin, capture_output=True, text=True, encoding="utf-8",
+                          env=env, check=True, timeout=120)
+
+
 def _run_cli(args, stdin=None):
     cmd = _cli_command()
     if cmd is None:
         pytest.skip("asr_normalizer.cli has no main()")
-    env = dict(os.environ, PYTHONIOENCODING="utf-8", PYTHONUTF8="1")
-    return subprocess.run(cmd + args, input=stdin, capture_output=True, text=True, encoding="utf-8",
-                          env=env, check=True, timeout=120)
+    return _run(cmd + args, stdin=stdin)
 
 
 def test_cli_stdin_default_lang_en():
@@ -157,3 +164,19 @@ def test_cli_files_with_lang(tmp_path):
     b.write_text(lines[2] + "\n", encoding="utf-8")
     r = _run_cli(["--lang", "de", str(a), str(b)])
     assert r.stdout.splitlines() == [normalize(line, "de") for line in lines]
+
+
+def test_console_script():
+    """The installed `asr-normalize` entry point (this interpreter's scripts dir first, then PATH)."""
+    search = os.pathsep.join(p for p in (sysconfig.get_path("scripts"), os.environ.get("PATH")) if p)
+    exe = shutil.which("asr-normalize", path=search)
+    if exe is None:
+        pytest.skip("asr-normalize console script is not installed on PATH")
+    r = _run([exe, "--lang", "en"], stdin="\n".join(CLI_LINES) + "\n")
+    assert r.stdout.splitlines() == [normalize(line, "en") for line in CLI_LINES]
+    assert _run([exe, "--version"]).stdout.strip() == f"asr-normalize {asr_normalizer.__version__}"
+
+
+def test_python_dash_m():
+    r = _run([sys.executable, "-m", "asr_normalizer", "--lang", "de"], stdin="\n".join(CLI_LINES) + "\n")
+    assert r.stdout.splitlines() == [normalize(line, "de") for line in CLI_LINES]

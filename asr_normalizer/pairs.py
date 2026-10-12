@@ -3,6 +3,8 @@
 
 from difflib import SequenceMatcher
 
+__all__ = ["normalize_compound_pairs"]
+
 
 def normalize_compound_pairs(refs, preds):
     """Align compound word boundaries between ref/pred pairs.

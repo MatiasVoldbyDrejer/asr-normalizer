@@ -38,11 +38,12 @@ Requirements: this driver needs ``huggingface_hub`` and ``pyarrow``; the interpr
 have ``regex``, ``num2words``, ``datasets``, ``huggingface_hub`` and ``kaldialign`` installed
 (``normalizer.data_utils`` / ``eval_utils`` import them at module level).
 
-Usage:
-    python scripts/make_golden.py                      # full regeneration
-    python scripts/make_golden.py --no-full-sweep      # keep manifest sha256s, resample only
-    python scripts/make_golden.py --only fleurs_de     # regenerate a subset (same sample; manifest kept)
-    python scripts/make_golden.py --refresh-revisions  # move every dataset to its latest Hub revision
+Usage (``--source-repo PATH`` is required unless ``ASR_NORMALIZER_SOURCE_REPO`` is set; PATH is a clone
+of huggingface/open_asr_leaderboard at commit 60e2e3b):
+    python scripts/make_golden.py --source-repo PATH                      # full regeneration
+    python scripts/make_golden.py --source-repo PATH --no-full-sweep      # keep manifest sha256s, resample only
+    python scripts/make_golden.py --source-repo PATH --only fleurs_de     # regenerate a subset (same sample; manifest kept)
+    python scripts/make_golden.py --source-repo PATH --refresh-revisions  # move every dataset to its latest Hub revision
 
 Dataset revisions are pinned: by default the revisions recorded in an existing manifest.json are
 reused, so a rerun reproduces the committed fixtures byte for byte (except the "generated" date).

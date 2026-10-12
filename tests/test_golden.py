@@ -6,7 +6,9 @@ tests/golden/manifest.json for provenance. Regenerate with that script, never by
 """
 
 import hashlib
+import importlib
 import json
+import os
 from pathlib import Path
 
 import pytest
@@ -17,6 +19,7 @@ GOLDEN = Path(__file__).parent / "golden"
 MANIFEST = json.loads((GOLDEN / "manifest.json").read_text(encoding="utf-8"))
 FILES = sorted(p.name for p in GOLDEN.glob("*.jsonl") if p.name != "pairs.jsonl")
 MAX_REPORTED = 20
+FULL = os.environ.get("ASR_NORMALIZER_FULL") == "1"
 
 _ML_NO_LANG = MultilingualNormalizer(remove_diacritics=False)
 
@@ -92,12 +95,20 @@ def _is_target_text_in_range(ref):
     return ref.strip() != ""
 
 
+def _import_full_dep(name):
+    """With ASR_NORMALIZER_FULL=1 a missing dependency fails loudly (pip install -e ".[dev,full]");
+    the sweep must never be skipped silently. Without it, the test is skipped anyway."""
+    if FULL:
+        return importlib.import_module(name)
+    return pytest.importorskip(name)
+
+
 def _fetch_texts(source):
     """Transcript column only (parquet range reads), files in manifest order."""
     from concurrent.futures import ThreadPoolExecutor
 
-    hf = pytest.importorskip("huggingface_hub")
-    pq = pytest.importorskip("pyarrow.parquet") if source["format"] == "parquet" else None
+    hf = _import_full_dep("huggingface_hub")
+    pq = _import_full_dep("pyarrow.parquet") if source["format"] == "parquet" else None
     fs = hf.HfFileSystem()
     column = source["text_column"]
 

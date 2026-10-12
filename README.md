@@ -1,7 +1,9 @@
 # asr-normalizer
 
-The text normalizer behind the [Open ASR Leaderboard](https://huggingface.co/spaces/hf-audio/open_asr_leaderboard)
-and the [Open TTS Leaderboard](https://huggingface.co/spaces/hf-audio/open_tts_leaderboard), as a standalone package.
+The text normalizer used by the [Open ASR Leaderboard](https://huggingface.co/spaces/hf-audio/open_asr_leaderboard),
+as a standalone package. The [Open TTS Leaderboard](https://huggingface.co/spaces/hf-audio/open_tts_leaderboard) is
+migrating to it from its own, older copy of this code; the switch changes some TTS outputs, as measured in the
+TTS leaderboard's migration pull request.
 
 Before word error rate (WER) is computed, both the reference transcript and the model's output are passed through
 this normalizer, so that casing, punctuation, filler words, number formatting, and British/American spelling don't
@@ -124,6 +126,10 @@ The version number identifies the normalization behaviour. Scores computed with 
 - **Minor** (`0.x.0`): any change to any golden output. The CHANGELOG entry must list the affected datasets.
 - **Major**: incompatible API changes.
 
+Normalized output also depends on the installed `num2words` version (hence the `num2words>=0.5.12,<0.6` pin) and
+on the Unicode tables of Python's `unicodedata` module. The golden fixtures were verified identical on CPython
+3.9–3.14.
+
 ## Provenance
 
 Extracted verbatim from
@@ -146,8 +152,12 @@ Whisper's text normalizer, and the original copyright headers are kept.
 
 ```bash
 uv venv && uv pip install -e ".[dev]"
-pytest -q                                   # golden fixtures: normalize(input, lang) == expected
-ASR_NORMALIZER_FULL=1 pytest -q -m full     # re-fetch every leaderboard reference and check the manifest hashes
+.venv/bin/pytest -q                         # golden fixtures: normalize(input, lang) == expected
+
+# Full sweep: re-fetch every leaderboard reference (text columns only) and check the manifest hashes.
+# Needs network and about 15 minutes, plus the `full` extra (huggingface_hub, pyarrow):
+uv pip install -e ".[dev,full]"             # or: pip install -e ".[dev,full]"
+ASR_NORMALIZER_FULL=1 .venv/bin/pytest -q -m full
 ```
 
 The golden fixtures in `tests/golden/` were generated from the original leaderboard code, and are what proves
@@ -157,4 +167,4 @@ The fixture diff is what reviewers check.
 
 ## License
 
-Apache-2.0 (see [LICENSE](LICENSE)). Copyright the OpenAI team, the Hugging Face team and contributors.
+Apache-2.0 (see [LICENSE](LICENSE) and [NOTICE](NOTICE)). Copyright the OpenAI team, the Hugging Face team and contributors.

@@ -8,6 +8,8 @@ import num2words
 from .basic import BasicMultilingualTextNormalizer
 from .languages.hy import ArmenianTextNormalizer
 
+__all__ = ["FILLER_WORDS", "MultilingualNormalizer"]
+
 
 # Language-specific filler words / hesitations, removed when the matching
 # lang= is passed to the multilingual normalizer. Multi-word entries are

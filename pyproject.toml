@@ -5,11 +5,11 @@ build-backend = "hatchling.build"
 [project]
 name = "asr-normalizer"
 dynamic = ["version"]
-description = "The text normalizer behind the Open ASR Leaderboard and the Open TTS Leaderboard (Whisper's normalizer plus the leaderboard's patches)."
+description = "The text normalizer used by the Open ASR Leaderboard (Whisper's normalizer plus the leaderboard's patches); the Open TTS Leaderboard is migrating to it."
 readme = "README.md"
 requires-python = ">=3.9"
 license = "Apache-2.0"
-license-files = ["LICENSE"]
+license-files = ["LICENSE", "NOTICE"]
 authors = [
     { name = "Hugging Face audio team" },
     { name = "The Agentic Data Company (Matias Voldby Drejer)" },
@@ -19,7 +19,6 @@ classifiers = [
     "Development Status :: 4 - Beta",
     "Intended Audience :: Developers",
     "Intended Audience :: Science/Research",
-    "Natural Language :: English",
     "Operating System :: OS Independent",
     "Programming Language :: Python :: 3",
     "Programming Language :: Python :: 3 :: Only",
@@ -28,17 +27,21 @@ classifiers = [
     "Programming Language :: Python :: 3.11",
     "Programming Language :: Python :: 3.12",
     "Programming Language :: Python :: 3.13",
+    "Programming Language :: Python :: 3.14",
     "Topic :: Multimedia :: Sound/Audio :: Speech",
     "Topic :: Scientific/Engineering :: Artificial Intelligence",
     "Topic :: Text Processing :: Linguistic",
 ]
 dependencies = [
     "regex",
-    "num2words",
+    # Pinned: normalized output depends on the num2words version (it differs on 0.5.10 and 0.5.6).
+    "num2words>=0.5.12,<0.6",
 ]
 
 [project.optional-dependencies]
 dev = ["pytest"]
+# Only for the full golden sweep (ASR_NORMALIZER_FULL=1 pytest -m full), which re-fetches the transcripts.
+full = ["huggingface_hub", "pyarrow"]
 
 [project.scripts]
 asr-normalize = "asr_normalizer.cli:main"
@@ -63,6 +66,7 @@ include = [
     "/README.md",
     "/CHANGELOG.md",
     "/LICENSE",
+    "/NOTICE",
 ]
 
 [tool.pytest.ini_options]
