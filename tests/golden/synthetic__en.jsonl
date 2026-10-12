@@ -1,0 +1,771 @@
+{"input": "", "lang": "en", "expected": ""}
+{"input": " ", "lang": "en", "expected": ""}
+{"input": "   ", "lang": "en", "expected": ""}
+{"input": "\t", "lang": "en", "expected": ""}
+{"input": "\n", "lang": "en", "expected": ""}
+{"input": " \t\n ", "lang": "en", "expected": ""}
+{"input": " ", "lang": "en", "expected": ""}
+{"input": "　", "lang": "en", "expected": ""}
+{"input": ".", "lang": "en", "expected": ""}
+{"input": "...", "lang": "en", "expected": "."}
+{"input": "?!", "lang": "en", "expected": ""}
+{"input": "-", "lang": "en", "expected": ""}
+{"input": "'", "lang": "en", "expected": ""}
+{"input": "hello [noise] world", "lang": "en", "expected": "hello world"}
+{"input": "hello <unk> world", "lang": "en", "expected": "hello world"}
+{"input": "<laugh> yes", "lang": "en", "expected": "yes"}
+{"input": "[inaudible]", "lang": "en", "expected": ""}
+{"input": "(laughs) okay", "lang": "en", "expected": "okay"}
+{"input": "keep (this part) out", "lang": "en", "expected": "keep out"}
+{"input": "nested [a [b] c] d", "lang": "en", "expected": "nested cd"}
+{"input": "unbalanced [bracket here", "lang": "en", "expected": "unbalanced bracket here"}
+{"input": "unbalanced (paren here", "lang": "en", "expected": "unbalanced paren here"}
+{"input": "a (b) c (d) e", "lang": "en", "expected": "ace"}
+{"input": "a <b> [c] (d) e", "lang": "en", "expected": "a e"}
+{"input": "empty () parens", "lang": "en", "expected": "empty parens"}
+{"input": "brackets [] empty", "lang": "en", "expected": "brackets empty"}
+{"input": "x (y (z)) w", "lang": "en", "expected": "xw"}
+{"input": "<b>bold</b> text", "lang": "en", "expected": "bold text"}
+{"input": "{curly} braces", "lang": "en", "expected": "curly braces"}
+{"input": "(full sentence in parens)", "lang": "en", "expected": ""}
+{"input": "foo[bar]baz", "lang": "en", "expected": "foobaz"}
+{"input": "well ah-ha i think", "lang": "en", "expected": "well i think"}
+{"input": "Ah-ha, yes.", "lang": "en", "expected": "yes"}
+{"input": "well ah i think", "lang": "en", "expected": "well i think"}
+{"input": "Ah, yes.", "lang": "en", "expected": "yes"}
+{"input": "well aaahhhmm i think", "lang": "en", "expected": "well i think"}
+{"input": "Aaahhhmm, yes.", "lang": "en", "expected": "yes"}
+{"input": "well aha i think", "lang": "en", "expected": "well i think"}
+{"input": "Aha, yes.", "lang": "en", "expected": "yes"}
+{"input": "well aaahhhaaa i think", "lang": "en", "expected": "well i think"}
+{"input": "Aaahhhaaa, yes.", "lang": "en", "expected": "yes"}
+{"input": "well eh i think", "lang": "en", "expected": "well i think"}
+{"input": "Eh, yes.", "lang": "en", "expected": "yes"}
+{"input": "well eeehhhmm i think", "lang": "en", "expected": "well i think"}
+{"input": "Eeehhhmm, yes.", "lang": "en", "expected": "yes"}
+{"input": "well em i think", "lang": "en", "expected": "well i think"}
+{"input": "Em, yes.", "lang": "en", "expected": "yes"}
+{"input": "well eeemmm i think", "lang": "en", "expected": "well i think"}
+{"input": "Eeemmm, yes.", "lang": "en", "expected": "yes"}
+{"input": "well er i think", "lang": "en", "expected": "well i think"}
+{"input": "Er, yes.", "lang": "en", "expected": "yes"}
+{"input": "well eeerrrmm i think", "lang": "en", "expected": "well i think"}
+{"input": "Eeerrrmm, yes.", "lang": "en", "expected": "yes"}
+{"input": "well hah i think", "lang": "en", "expected": "well i think"}
+{"input": "Hah, yes.", "lang": "en", "expected": "yes"}
+{"input": "well hhhaaahhh i think", "lang": "en", "expected": "well i think"}
+{"input": "Hhhaaahhh, yes.", "lang": "en", "expected": "yes"}
+{"input": "well heh i think", "lang": "en", "expected": "well i think"}
+{"input": "Heh, yes.", "lang": "en", "expected": "yes"}
+{"input": "well hhheeehhh i think", "lang": "en", "expected": "well i think"}
+{"input": "Hhheeehhh, yes.", "lang": "en", "expected": "yes"}
+{"input": "well hm i think", "lang": "en", "expected": "well i think"}
+{"input": "Hm, yes.", "lang": "en", "expected": "yes"}
+{"input": "well hhhmmm i think", "lang": "en", "expected": "well i think"}
+{"input": "Hhhmmm, yes.", "lang": "en", "expected": "yes"}
+{"input": "well huh i think", "lang": "en", "expected": "well i think"}
+{"input": "Huh, yes.", "lang": "en", "expected": "yes"}
+{"input": "well hhhuuuhhh i think", "lang": "en", "expected": "well i think"}
+{"input": "Hhhuuuhhh, yes.", "lang": "en", "expected": "yes"}
+{"input": "well mm i think", "lang": "en", "expected": "well i think"}
+{"input": "Mm, yes.", "lang": "en", "expected": "yes"}
+{"input": "well mmmm i think", "lang": "en", "expected": "well i think"}
+{"input": "Mmmm, yes.", "lang": "en", "expected": "yes"}
+{"input": "well mh i think", "lang": "en", "expected": "well i think"}
+{"input": "Mh, yes.", "lang": "en", "expected": "yes"}
+{"input": "well mmmhhhmm i think", "lang": "en", "expected": "well i think"}
+{"input": "Mmmhhhmm, yes.", "lang": "en", "expected": "yes"}
+{"input": "well tsk i think", "lang": "en", "expected": "well i think"}
+{"input": "Tsk, yes.", "lang": "en", "expected": "yes"}
+{"input": "well tttssskkk i think", "lang": "en", "expected": "well i think"}
+{"input": "Tttssskkk, yes.", "lang": "en", "expected": "yes"}
+{"input": "well ugh i think", "lang": "en", "expected": "well i think"}
+{"input": "Ugh, yes.", "lang": "en", "expected": "yes"}
+{"input": "well uuuggghhh i think", "lang": "en", "expected": "well i think"}
+{"input": "Uuuggghhh, yes.", "lang": "en", "expected": "yes"}
+{"input": "well uh i think", "lang": "en", "expected": "well i think"}
+{"input": "Uh, yes.", "lang": "en", "expected": "yes"}
+{"input": "well uuuhhhmm i think", "lang": "en", "expected": "well i think"}
+{"input": "Uuuhhhmm, yes.", "lang": "en", "expected": "yes"}
+{"input": "well uhu i think", "lang": "en", "expected": "well i think"}
+{"input": "Uhu, yes.", "lang": "en", "expected": "yes"}
+{"input": "well uuuhhhuuuhm i think", "lang": "en", "expected": "well i think"}
+{"input": "Uuuhhhuuuhm, yes.", "lang": "en", "expected": "yes"}
+{"input": "well um i think", "lang": "en", "expected": "well i think"}
+{"input": "Um, yes.", "lang": "en", "expected": "yes"}
+{"input": "well uuummmhh i think", "lang": "en", "expected": "well i think"}
+{"input": "Uuummmhh, yes.", "lang": "en", "expected": "yes"}
+{"input": "well ahem i think", "lang": "en", "expected": "well i think"}
+{"input": "Ahem, yes.", "lang": "en", "expected": "yes"}
+{"input": "well eheh i think", "lang": "en", "expected": "well i think"}
+{"input": "Eheh, yes.", "lang": "en", "expected": "yes"}
+{"input": "well ehehe i think", "lang": "en", "expected": "well i think"}
+{"input": "Ehehe, yes.", "lang": "en", "expected": "yes"}
+{"input": "well ehr i think", "lang": "en", "expected": "well i think"}
+{"input": "Ehr, yes.", "lang": "en", "expected": "yes"}
+{"input": "well hmmph i think", "lang": "en", "expected": "well i think"}
+{"input": "Hmmph, yes.", "lang": "en", "expected": "yes"}
+{"input": "well hum i think", "lang": "en", "expected": "well i think"}
+{"input": "Hum, yes.", "lang": "en", "expected": "yes"}
+{"input": "well hunh i think", "lang": "en", "expected": "well i think"}
+{"input": "Hunh, yes.", "lang": "en", "expected": "yes"}
+{"input": "well mhum i think", "lang": "en", "expected": "well i think"}
+{"input": "Mhum, yes.", "lang": "en", "expected": "yes"}
+{"input": "well mmkay i think", "lang": "en", "expected": "well i think"}
+{"input": "Mmkay, yes.", "lang": "en", "expected": "yes"}
+{"input": "uhhhm", "lang": "en", "expected": ""}
+{"input": "Uhhhm, so", "lang": "en", "expected": "so"}
+{"input": "UMMM what", "lang": "en", "expected": "what"}
+{"input": "uh-huh", "lang": "en", "expected": ""}
+{"input": "um-hmm right", "lang": "en", "expected": "right"}
+{"input": "mm-hmm", "lang": "en", "expected": ""}
+{"input": "ah-ha got it", "lang": "en", "expected": "got it"}
+{"input": "aha moment", "lang": "en", "expected": "moment"}
+{"input": "hmmm interesting", "lang": "en", "expected": "interesting"}
+{"input": "err no", "lang": "en", "expected": "no"}
+{"input": "ehm well", "lang": "en", "expected": "well"}
+{"input": "ugh fine", "lang": "en", "expected": "fine"}
+{"input": "tsk tsk", "lang": "en", "expected": ""}
+{"input": "hmmph", "lang": "en", "expected": ""}
+{"input": "mmkay", "lang": "en", "expected": ""}
+{"input": "hunh", "lang": "en", "expected": ""}
+{"input": "umbrella", "lang": "en", "expected": "umbrella"}
+{"input": "hummus", "lang": "en", "expected": "hummus"}
+{"input": "ahead", "lang": "en", "expected": "ahead"}
+{"input": "error", "lang": "en", "expected": "error"}
+{"input": "emma", "lang": "en", "expected": "emma"}
+{"input": "hum", "lang": "en", "expected": ""}
+{"input": "huh?", "lang": "en", "expected": ""}
+{"input": "ha ha", "lang": "en", "expected": "ha ha"}
+{"input": "hah", "lang": "en", "expected": ""}
+{"input": "heh", "lang": "en", "expected": ""}
+{"input": "eheh", "lang": "en", "expected": ""}
+{"input": "ehehe", "lang": "en", "expected": ""}
+{"input": "erm, uh, um", "lang": "en", "expected": ""}
+{"input": "uh uh uh", "lang": "en", "expected": ""}
+{"input": "so...uh...yeah", "lang": "en", "expected": "so yeah"}
+{"input": "uh,um,er", "lang": "en", "expected": ""}
+{"input": "Um. Uh. Er.", "lang": "en", "expected": ""}
+{"input": "mhm", "lang": "en", "expected": ""}
+{"input": "mmhm", "lang": "en", "expected": ""}
+{"input": "mh", "lang": "en", "expected": ""}
+{"input": "well 2:00 today", "lang": "en", "expected": "well 2 today"}
+{"input": "2:00.", "lang": "en", "expected": "2"}
+{"input": "well 11:00 today", "lang": "en", "expected": "well 11 today"}
+{"input": "11:00.", "lang": "en", "expected": "11"}
+{"input": "well 9:00 today", "lang": "en", "expected": "well 9 today"}
+{"input": "9:00.", "lang": "en", "expected": "9"}
+{"input": "well 10:00:00 today", "lang": "en", "expected": "well 10 0 today"}
+{"input": "10:00:00.", "lang": "en", "expected": "10 0"}
+{"input": "well 123:00 today", "lang": "en", "expected": "well 123 0 today"}
+{"input": "123:00.", "lang": "en", "expected": "123 0"}
+{"input": "well 3:000 today", "lang": "en", "expected": "well 30 today"}
+{"input": "3:000.", "lang": "en", "expected": "30"}
+{"input": "well won't today", "lang": "en", "expected": "well will not today"}
+{"input": "WON'T.", "lang": "en", "expected": "will not"}
+{"input": "well can't today", "lang": "en", "expected": "well can not today"}
+{"input": "CAN'T.", "lang": "en", "expected": "can not"}
+{"input": "well let's today", "lang": "en", "expected": "well let us today"}
+{"input": "LET'S.", "lang": "en", "expected": "let us"}
+{"input": "well ain't today", "lang": "en", "expected": "well aint today"}
+{"input": "AIN'T.", "lang": "en", "expected": "aint"}
+{"input": "well y'all today", "lang": "en", "expected": "well you all today"}
+{"input": "Y'ALL.", "lang": "en", "expected": "you all"}
+{"input": "well wanna today", "lang": "en", "expected": "well want to today"}
+{"input": "WANNA.", "lang": "en", "expected": "want to"}
+{"input": "well gotta today", "lang": "en", "expected": "well got to today"}
+{"input": "GOTTA.", "lang": "en", "expected": "got to"}
+{"input": "well gonna today", "lang": "en", "expected": "well going to today"}
+{"input": "GONNA.", "lang": "en", "expected": "going to"}
+{"input": "well i'ma today", "lang": "en", "expected": "well i am going to today"}
+{"input": "I'MA.", "lang": "en", "expected": "i am going to"}
+{"input": "well imma today", "lang": "en", "expected": "well i am going to today"}
+{"input": "IMMA.", "lang": "en", "expected": "i am going to"}
+{"input": "well woulda today", "lang": "en", "expected": "well would have today"}
+{"input": "WOULDA.", "lang": "en", "expected": "would have"}
+{"input": "well coulda today", "lang": "en", "expected": "well could have today"}
+{"input": "COULDA.", "lang": "en", "expected": "could have"}
+{"input": "well shoulda today", "lang": "en", "expected": "well should have today"}
+{"input": "SHOULDA.", "lang": "en", "expected": "should have"}
+{"input": "well ma'am today", "lang": "en", "expected": "well madam today"}
+{"input": "MA'AM.", "lang": "en", "expected": "madam"}
+{"input": "well mr today", "lang": "en", "expected": "well mister today"}
+{"input": "MR.", "lang": "en", "expected": "mister"}
+{"input": "well mrs today", "lang": "en", "expected": "well missus today"}
+{"input": "MRS.", "lang": "en", "expected": "missus"}
+{"input": "well st today", "lang": "en", "expected": "well saint today"}
+{"input": "ST.", "lang": "en", "expected": "saint"}
+{"input": "well dr today", "lang": "en", "expected": "well doctor today"}
+{"input": "DR.", "lang": "en", "expected": "doctor"}
+{"input": "well prof today", "lang": "en", "expected": "well professor today"}
+{"input": "PROF.", "lang": "en", "expected": "professor"}
+{"input": "well capt today", "lang": "en", "expected": "well captain today"}
+{"input": "CAPT.", "lang": "en", "expected": "captain"}
+{"input": "well gov today", "lang": "en", "expected": "well governor today"}
+{"input": "GOV.", "lang": "en", "expected": "governor"}
+{"input": "well ald today", "lang": "en", "expected": "well alderman today"}
+{"input": "ALD.", "lang": "en", "expected": "alderman"}
+{"input": "well gen today", "lang": "en", "expected": "well general today"}
+{"input": "GEN.", "lang": "en", "expected": "general"}
+{"input": "well sen today", "lang": "en", "expected": "well senator today"}
+{"input": "SEN.", "lang": "en", "expected": "senator"}
+{"input": "well rep today", "lang": "en", "expected": "well representative today"}
+{"input": "REP.", "lang": "en", "expected": "representative"}
+{"input": "well pres today", "lang": "en", "expected": "well president today"}
+{"input": "PRES.", "lang": "en", "expected": "president"}
+{"input": "well rev today", "lang": "en", "expected": "well reverend today"}
+{"input": "REV.", "lang": "en", "expected": "reverend"}
+{"input": "well hon today", "lang": "en", "expected": "well honorable today"}
+{"input": "HON.", "lang": "en", "expected": "honorable"}
+{"input": "well asst today", "lang": "en", "expected": "well assistant today"}
+{"input": "ASST.", "lang": "en", "expected": "assistant"}
+{"input": "well assoc today", "lang": "en", "expected": "well associate today"}
+{"input": "ASSOC.", "lang": "en", "expected": "associate"}
+{"input": "well lt today", "lang": "en", "expected": "well lieutenant today"}
+{"input": "LT.", "lang": "en", "expected": "lieutenant"}
+{"input": "well col today", "lang": "en", "expected": "well colonel today"}
+{"input": "COL.", "lang": "en", "expected": "colonel"}
+{"input": "well jr today", "lang": "en", "expected": "well junior today"}
+{"input": "JR.", "lang": "en", "expected": "junior"}
+{"input": "well sr today", "lang": "en", "expected": "well senior today"}
+{"input": "SR.", "lang": "en", "expected": "senior"}
+{"input": "well esq today", "lang": "en", "expected": "well esquire today"}
+{"input": "ESQ.", "lang": "en", "expected": "esquire"}
+{"input": "well she'd been today", "lang": "en", "expected": "well she had been today"}
+{"input": "SHE'D BEEN.", "lang": "en", "expected": "she had been"}
+{"input": "well it's been today", "lang": "en", "expected": "well it has been today"}
+{"input": "IT'S BEEN.", "lang": "en", "expected": "it has been"}
+{"input": "well they'd gone today", "lang": "en", "expected": "well they had gone today"}
+{"input": "THEY'D GONE.", "lang": "en", "expected": "they had gone"}
+{"input": "well he's gone today", "lang": "en", "expected": "well he has gone today"}
+{"input": "HE'S GONE.", "lang": "en", "expected": "he has gone"}
+{"input": "well we'd done today", "lang": "en", "expected": "well we had done today"}
+{"input": "WE'D DONE.", "lang": "en", "expected": "we had done"}
+{"input": "well she's got today", "lang": "en", "expected": "well she has got today"}
+{"input": "SHE'S GOT.", "lang": "en", "expected": "she has got"}
+{"input": "well isn't today", "lang": "en", "expected": "well is not today"}
+{"input": "ISN'T.", "lang": "en", "expected": "is not"}
+{"input": "well doesn't today", "lang": "en", "expected": "well does not today"}
+{"input": "DOESN'T.", "lang": "en", "expected": "does not"}
+{"input": "well you're today", "lang": "en", "expected": "well you are today"}
+{"input": "YOU'RE.", "lang": "en", "expected": "you are"}
+{"input": "well it's today", "lang": "en", "expected": "well it is today"}
+{"input": "IT'S.", "lang": "en", "expected": "it is"}
+{"input": "well he's today", "lang": "en", "expected": "well he is today"}
+{"input": "HE'S.", "lang": "en", "expected": "he is"}
+{"input": "well she's today", "lang": "en", "expected": "well she is today"}
+{"input": "SHE'S.", "lang": "en", "expected": "she is"}
+{"input": "well what's today", "lang": "en", "expected": "well what is today"}
+{"input": "WHAT'S.", "lang": "en", "expected": "what is"}
+{"input": "well that's today", "lang": "en", "expected": "well that is today"}
+{"input": "THAT'S.", "lang": "en", "expected": "that is"}
+{"input": "well who's today", "lang": "en", "expected": "well who is today"}
+{"input": "WHO'S.", "lang": "en", "expected": "who is"}
+{"input": "well here's today", "lang": "en", "expected": "well here is today"}
+{"input": "HERE'S.", "lang": "en", "expected": "here is"}
+{"input": "well there's today", "lang": "en", "expected": "well there is today"}
+{"input": "THERE'S.", "lang": "en", "expected": "there is"}
+{"input": "well how's today", "lang": "en", "expected": "well how is today"}
+{"input": "HOW'S.", "lang": "en", "expected": "how is"}
+{"input": "well when's today", "lang": "en", "expected": "well when is today"}
+{"input": "WHEN'S.", "lang": "en", "expected": "when is"}
+{"input": "well where's today", "lang": "en", "expected": "well where is today"}
+{"input": "WHERE'S.", "lang": "en", "expected": "where is"}
+{"input": "well why's today", "lang": "en", "expected": "well why is today"}
+{"input": "WHY'S.", "lang": "en", "expected": "why is"}
+{"input": "well this's today", "lang": "en", "expected": "well this is today"}
+{"input": "THIS'S.", "lang": "en", "expected": "this is"}
+{"input": "well i'd today", "lang": "en", "expected": "well i would today"}
+{"input": "I'D.", "lang": "en", "expected": "i would"}
+{"input": "well we'll today", "lang": "en", "expected": "well we will today"}
+{"input": "WE'LL.", "lang": "en", "expected": "we will"}
+{"input": "well don't today", "lang": "en", "expected": "well do not today"}
+{"input": "DON'T.", "lang": "en", "expected": "do not"}
+{"input": "well they've today", "lang": "en", "expected": "well they have today"}
+{"input": "THEY'VE.", "lang": "en", "expected": "they have"}
+{"input": "well i'm today", "lang": "en", "expected": "well i am today"}
+{"input": "I'M.", "lang": "en", "expected": "i am"}
+{"input": "Mr. Smith and Mrs. Jones", "lang": "en", "expected": "mister smith and missus jones"}
+{"input": "Dr. Who", "lang": "en", "expected": "doctor who"}
+{"input": "St. Louis", "lang": "en", "expected": "saint louis"}
+{"input": "Prof. X", "lang": "en", "expected": "professor x"}
+{"input": "Lt. Col. Smith", "lang": "en", "expected": "lieutenant colonel smith"}
+{"input": "Jr. and Sr.", "lang": "en", "expected": "junior and senior"}
+{"input": "it's 3 o'clock", "lang": "en", "expected": "it is 30 clock"}
+{"input": "at 2:00 AM", "lang": "en", "expected": "at 2 am"}
+{"input": "at 2:00 p.m.", "lang": "en", "expected": "at 2 pm"}
+{"input": "10:30 am", "lang": "en", "expected": "10 30 am"}
+{"input": "11:00", "lang": "en", "expected": "11"}
+{"input": "at 3:00 o'clock", "lang": "en", "expected": "at 30 clock"}
+{"input": "5 o'clock shadow", "lang": "en", "expected": "50 clock shadow"}
+{"input": "won't can't don't", "lang": "en", "expected": "will not can not do not"}
+{"input": "I'd've", "lang": "en", "expected": "i would have"}
+{"input": "y'all'll", "lang": "en", "expected": "you all will"}
+{"input": "ma'am", "lang": "en", "expected": "madam"}
+{"input": "I'ma go", "lang": "en", "expected": "i am going to go"}
+{"input": "gonna wanna gotta", "lang": "en", "expected": "going to want to got to"}
+{"input": "she 's here", "lang": "en", "expected": "she is here"}
+{"input": "rock 'n' roll", "lang": "en", "expected": "rock n roll"}
+{"input": "'tis the season", "lang": "en", "expected": "tis the season"}
+{"input": "o'neill's", "lang": "en", "expected": "0 neill s"}
+{"input": "the '90s", "lang": "en", "expected": "the 90s"}
+{"input": "it 's", "lang": "en", "expected": "it is"}
+{"input": "they ' re", "lang": "en", "expected": "they re"}
+{"input": "it’s curly", "lang": "en", "expected": "it s curly"}
+{"input": "don’t", "lang": "en", "expected": "don t"}
+{"input": "let's go", "lang": "en", "expected": "let us go"}
+{"input": "ain't", "lang": "en", "expected": "aint"}
+{"input": "woulda coulda shoulda", "lang": "en", "expected": "would have could have should have"}
+{"input": "one", "lang": "en", "expected": "one"}
+{"input": "ones", "lang": "en", "expected": "ones"}
+{"input": "one two three", "lang": "en", "expected": "123"}
+{"input": "twenty one", "lang": "en", "expected": "21"}
+{"input": "twenty-one", "lang": "en", "expected": "21"}
+{"input": "a hundred", "lang": "en", "expected": "a 100"}
+{"input": "one hundred and five", "lang": "en", "expected": "105"}
+{"input": "two thousand and twenty four", "lang": "en", "expected": "2024"}
+{"input": "nineteen ninety nine", "lang": "en", "expected": "1999"}
+{"input": "nineteen oh five", "lang": "en", "expected": "1905"}
+{"input": "four oh one", "lang": "en", "expected": "401"}
+{"input": "oh seven nine eight", "lang": "en", "expected": "0798"}
+{"input": "oh oh", "lang": "en", "expected": "oh oh"}
+{"input": "oh no", "lang": "en", "expected": "oh no"}
+{"input": "oh", "lang": "en", "expected": "oh"}
+{"input": "zero", "lang": "en", "expected": "0"}
+{"input": "zero zero seven", "lang": "en", "expected": "007"}
+{"input": "double seven", "lang": "en", "expected": "77"}
+{"input": "triple five", "lang": "en", "expected": "555"}
+{"input": "double o seven", "lang": "en", "expected": "007"}
+{"input": "double you", "lang": "en", "expected": "double you"}
+{"input": "first", "lang": "en", "expected": "1st"}
+{"input": "second", "lang": "en", "expected": "2nd"}
+{"input": "twenty first", "lang": "en", "expected": "21st"}
+{"input": "hundredth", "lang": "en", "expected": "100th"}
+{"input": "the 1st", "lang": "en", "expected": "the 1st"}
+{"input": "the 2nd", "lang": "en", "expected": "the 2nd"}
+{"input": "3rd", "lang": "en", "expected": "3rd"}
+{"input": "4th", "lang": "en", "expected": "4th"}
+{"input": "21st", "lang": "en", "expected": "21st"}
+{"input": "the 1960s", "lang": "en", "expected": "the 1960s"}
+{"input": "1960's", "lang": "en", "expected": "1960s"}
+{"input": "the sixties", "lang": "en", "expected": "the 60s"}
+{"input": "eighties", "lang": "en", "expected": "80s"}
+{"input": "two and a half", "lang": "en", "expected": "2.5"}
+{"input": "three and a half million", "lang": "en", "expected": "3500000"}
+{"input": "and a half", "lang": "en", "expected": ""}
+{"input": "a half", "lang": "en", "expected": "a half"}
+{"input": "one half", "lang": "en", "expected": "one half"}
+{"input": "1/2", "lang": "en", "expected": "one 2"}
+{"input": "3/4", "lang": "en", "expected": "34"}
+{"input": "five point two", "lang": "en", "expected": "5.2"}
+{"input": "point five", "lang": "en", "expected": ".5"}
+{"input": "3.14", "lang": "en", "expected": "3.14"}
+{"input": "0.5", "lang": "en", "expected": "0.5"}
+{"input": "1.0", "lang": "en", "expected": "one"}
+{"input": "1.", "lang": "en", "expected": "one"}
+{"input": ".5", "lang": "en", "expected": ".5"}
+{"input": "1.2.3", "lang": "en", "expected": "one.2.3"}
+{"input": "192.168.0.1", "lang": "en", "expected": "192.168.0 one"}
+{"input": "$20", "lang": "en", "expected": "$20"}
+{"input": "$20 million", "lang": "en", "expected": "$20000000"}
+{"input": "20 dollars", "lang": "en", "expected": "$20"}
+{"input": "twenty dollars", "lang": "en", "expected": "$20"}
+{"input": "$2.50", "lang": "en", "expected": "$2.50"}
+{"input": "2 dollars and 7 cents", "lang": "en", "expected": "$2.07"}
+{"input": "two dollars and seven cents", "lang": "en", "expected": "$2.07"}
+{"input": "$0.07", "lang": "en", "expected": "¢7"}
+{"input": "€5", "lang": "en", "expected": "€5"}
+{"input": "£3.50", "lang": "en", "expected": "£3.50"}
+{"input": "5 euros", "lang": "en", "expected": "€5"}
+{"input": "ten pounds", "lang": "en", "expected": "£10"}
+{"input": "50 cents", "lang": "en", "expected": "¢50"}
+{"input": "¢5", "lang": "en", "expected": "¢5"}
+{"input": "50%", "lang": "en", "expected": "50%"}
+{"input": "50 percent", "lang": "en", "expected": "50%"}
+{"input": "fifty per cent", "lang": "en", "expected": "50%"}
+{"input": "12.5%", "lang": "en", "expected": "12.5%"}
+{"input": "100 percent sure", "lang": "en", "expected": "100% sure"}
+{"input": "per cent", "lang": "en", "expected": "per cent"}
+{"input": "minus five", "lang": "en", "expected": "-5"}
+{"input": "negative 3", "lang": "en", "expected": "-3"}
+{"input": "plus two", "lang": "en", "expected": "+2"}
+{"input": "positive", "lang": "en", "expected": "positive"}
+{"input": "-5", "lang": "en", "expected": "5"}
+{"input": "+5", "lang": "en", "expected": "5"}
+{"input": "1,000", "lang": "en", "expected": "1000"}
+{"input": "1,000,000", "lang": "en", "expected": "1000000"}
+{"input": "10,5", "lang": "en", "expected": "105"}
+{"input": "1 000", "lang": "en", "expected": "one 0"}
+{"input": "2024", "lang": "en", "expected": "2024"}
+{"input": "the year 2024", "lang": "en", "expected": "the year 2024"}
+{"input": "in 1999", "lang": "en", "expected": "in 1999"}
+{"input": "1999-2000", "lang": "en", "expected": "1999 2000"}
+{"input": "555-1234", "lang": "en", "expected": "555 1234"}
+{"input": "(555) 123-4567", "lang": "en", "expected": "123 4567"}
+{"input": "+1 800 555 0199", "lang": "en", "expected": "one 800 555 199"}
+{"input": "800 555 0199", "lang": "en", "expected": "800 555 199"}
+{"input": "0049 30 1234", "lang": "en", "expected": "49 30 1234"}
+{"input": "000", "lang": "en", "expected": "0"}
+{"input": "007", "lang": "en", "expected": "7"}
+{"input": "0", "lang": "en", "expected": "0"}
+{"input": "01", "lang": "en", "expected": "one"}
+{"input": "1", "lang": "en", "expected": "one"}
+{"input": "1s", "lang": "en", "expected": "ones"}
+{"input": "11", "lang": "en", "expected": "11"}
+{"input": "one million", "lang": "en", "expected": "1000000"}
+{"input": "a million dollars", "lang": "en", "expected": "a $1000000"}
+{"input": "two billion", "lang": "en", "expected": "2000000000"}
+{"input": "3 trillion", "lang": "en", "expected": "3000000000000"}
+{"input": "a quadrillion", "lang": "en", "expected": "a 1000000000000000"}
+{"input": "decillions", "lang": "en", "expected": "1000000000000000000000000000000000s"}
+{"input": "123456789012345678901234567890", "lang": "en", "expected": "123456789012345678901234567890"}
+{"input": "1e5", "lang": "en", "expected": "one e5"}
+{"input": "10^3", "lang": "en", "expected": "10 3"}
+{"input": "2x", "lang": "en", "expected": "2x"}
+{"input": "x2", "lang": "en", "expected": "x2"}
+{"input": "mp3", "lang": "en", "expected": "mp 3"}
+{"input": "covid-19", "lang": "en", "expected": "covid 19"}
+{"input": "b2b", "lang": "en", "expected": "b2b"}
+{"input": "4k", "lang": "en", "expected": "4k"}
+{"input": "5g", "lang": "en", "expected": "5g"}
+{"input": "5 g", "lang": "en", "expected": "5g"}
+{"input": "v8", "lang": "en", "expected": "v8"}
+{"input": "a4 paper", "lang": "en", "expected": "a 4 paper"}
+{"input": "1980s", "lang": "en", "expected": "1980s"}
+{"input": "80s", "lang": "en", "expected": "80s"}
+{"input": "'80s", "lang": "en", "expected": "80s"}
+{"input": "the 80's", "lang": "en", "expected": "the 80s"}
+{"input": "1st-class", "lang": "en", "expected": "1st class"}
+{"input": "twenty twenty", "lang": "en", "expected": "2020"}
+{"input": "twenty twenty-four", "lang": "en", "expected": "2024"}
+{"input": "number nine", "lang": "en", "expected": "number 9"}
+{"input": "nine eleven", "lang": "en", "expected": "911"}
+{"input": "seven eleven", "lang": "en", "expected": "711"}
+{"input": "one oh one", "lang": "en", "expected": "101"}
+{"input": "one o one", "lang": "en", "expected": "101"}
+{"input": "zero point five", "lang": "en", "expected": "0.5"}
+{"input": "point", "lang": "en", "expected": "point"}
+{"input": "and", "lang": "en", "expected": "and"}
+{"input": "double", "lang": "en", "expected": "double"}
+{"input": "triple", "lang": "en", "expected": "triple"}
+{"input": "two hundred thousand", "lang": "en", "expected": "200000"}
+{"input": "thousand", "lang": "en", "expected": "1000"}
+{"input": "hundreds of people", "lang": "en", "expected": "100s of people"}
+{"input": "thousands", "lang": "en", "expected": "1000s"}
+{"input": "millions of dollars", "lang": "en", "expected": "1000000s of dollars"}
+{"input": "a dozen", "lang": "en", "expected": "a dozen"}
+{"input": "twelve dozen", "lang": "en", "expected": "12 dozen"}
+{"input": "fifteenth", "lang": "en", "expected": "15th"}
+{"input": "nineteenth", "lang": "en", "expected": "19th"}
+{"input": "ninetieth", "lang": "en", "expected": "90th"}
+{"input": "millionth", "lang": "en", "expected": "1000000th"}
+{"input": "sixes and sevens", "lang": "en", "expected": "6s and 7s"}
+{"input": "twos", "lang": "en", "expected": "2s"}
+{"input": "1 and a half", "lang": "en", "expected": "one and a half"}
+{"input": "3 and a half", "lang": "en", "expected": "3 and a half"}
+{"input": "seventies", "lang": "en", "expected": "70s"}
+{"input": "fortieth", "lang": "en", "expected": "40th"}
+{"input": "point point", "lang": "en", "expected": "point"}
+{"input": "and a half and a half", "lang": "en", "expected": ""}
+{"input": "an hour and a half", "lang": "en", "expected": "an hour and a half"}
+{"input": "1.2.3.", "lang": "en", "expected": "one.2.3"}
+{"input": "$.5", "lang": "en", "expected": " .5"}
+{"input": "1/0", "lang": "en", "expected": "one 0"}
+{"input": "0/0 x", "lang": "en", "expected": "00x"}
+{"input": "point hundred", "lang": "en", "expected": "100"}
+{"input": "double dollars", "lang": "en", "expected": "double dollars"}
+{"input": "minus", "lang": "en", "expected": "minus"}
+{"input": "dollars", "lang": "en", "expected": "dollars"}
+{"input": "percent", "lang": "en", "expected": "percent"}
+{"input": "9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999", "lang": "en", "expected": "9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999"}
+{"input": "11111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111", "lang": "en", "expected": null, "error": "ValueError: Converting the fraction failed"}
+{"input": "c o 2", "lang": "en", "expected": "c02"}
+{"input": "c o 2 emissions", "lang": "en", "expected": "c02 emissions"}
+{"input": "co2 emissions", "lang": "en", "expected": "co 2 emissions"}
+{"input": "CO 2", "lang": "en", "expected": "co 2"}
+{"input": "CO2", "lang": "en", "expected": "co 2"}
+{"input": "h 2 o", "lang": "en", "expected": "h 20"}
+{"input": "b b c", "lang": "en", "expected": "bbc"}
+{"input": "the b b c news", "lang": "en", "expected": "the bbc news"}
+{"input": "u s a", "lang": "en", "expected": "usa"}
+{"input": "U.S.A.", "lang": "en", "expected": "usa"}
+{"input": "u. s. a.", "lang": "en", "expected": "usa"}
+{"input": "the U.S.", "lang": "en", "expected": "the us"}
+{"input": "a b c", "lang": "en", "expected": "abc"}
+{"input": "a big cat", "lang": "en", "expected": "a big cat"}
+{"input": "i am a", "lang": "en", "expected": "i am a"}
+{"input": "i b m", "lang": "en", "expected": "ibm"}
+{"input": "a i", "lang": "en", "expected": "a i"}
+{"input": "x y z", "lang": "en", "expected": "xyz"}
+{"input": "f b i agent", "lang": "en", "expected": "fbi agent"}
+{"input": "n a s a", "lang": "en", "expected": "nasa"}
+{"input": "5 g network", "lang": "en", "expected": "5g network"}
+{"input": "j f k", "lang": "en", "expected": "jfk"}
+{"input": "t v", "lang": "en", "expected": "tv"}
+{"input": "a m", "lang": "en", "expected": "am"}
+{"input": "p m", "lang": "en", "expected": "pm"}
+{"input": "o k", "lang": "en", "expected": "okay"}
+{"input": "a.m.", "lang": "en", "expected": "am"}
+{"input": "p.m.", "lang": "en", "expected": "pm"}
+{"input": "9 a m", "lang": "en", "expected": "9 am"}
+{"input": "9 am", "lang": "en", "expected": "9 am"}
+{"input": "i o u", "lang": "en", "expected": "i0u"}
+{"input": "a 1", "lang": "en", "expected": "a one"}
+{"input": "e e", "lang": "en", "expected": "ee"}
+{"input": "o o", "lang": "en", "expected": "00"}
+{"input": "m i 6", "lang": "en", "expected": "mi6"}
+{"input": "Alan and Allan and Bridgette and Charly came by", "lang": "en", "expected": "allen and allen and bridget and charlie came by"}
+{"input": "Charley and Garry and Gregg and Jacky came by", "lang": "en", "expected": "charlie and gary and greg and jackie came by"}
+{"input": "Joann and Joane and Kellye and Kelli came by", "lang": "en", "expected": "joanne and joanne and kelly and kelly came by"}
+{"input": "Kelley and Lilly and Micheal and Michele came by", "lang": "en", "expected": "kelly and lily and michael and michelle came by"}
+{"input": "Mollie and Phillip and Sallie and Stacey came by", "lang": "en", "expected": "molly and philip and sally and stacy came by"}
+{"input": "Stacie and Tracey and Tracie and Bret came by", "lang": "en", "expected": "stacy and tracy and tracy and brett came by"}
+{"input": "Carrol and Carole and Carroll and Allison came by", "lang": "en", "expected": "carol and carol and carol and alison came by"}
+{"input": "Alyson and Russel and Douglass and Dominick came by", "lang": "en", "expected": "alison and russell and douglas and dominic came by"}
+{"input": "Robb and Kris and Kristopher and Cristopher came by", "lang": "en", "expected": "rob and chris and christopher and christopher came by"}
+{"input": "Kristina and Kristen and Karl and Kathy came by", "lang": "en", "expected": "christina and kristin and carl and cathy came by"}
+{"input": "Katherine and Kathryn and Catharine and Erik came by", "lang": "en", "expected": "catherine and catherine and catherine and eric came by"}
+{"input": "Erick and Caren and Caryn and Karin came by", "lang": "en", "expected": "eric and karen and karen and karen came by"}
+{"input": "Katelyn and Kaitlyn and Kaitlin and Nikole came by", "lang": "en", "expected": "caitlin and caitlin and caitlin and nicole came by"}
+{"input": "Veronika and Viktor and Viktoria and Kevan came by", "lang": "en", "expected": "veronica and victor and victoria and kevin came by"}
+{"input": "Patrik and Frederik and Fredrick and Lukas came by", "lang": "en", "expected": "patrick and frederick and frederick and lucas came by"}
+{"input": "Ann and Jon and Johnathan and Jonathon came by", "lang": "en", "expected": "anne and john and jonathan and jonathan came by"}
+{"input": "Sara and Mathew and Nicolas and Rachael came by", "lang": "en", "expected": "sarah and matthew and nicholas and rachel came by"}
+{"input": "Rebekah and Devorah and Theresa and Suzanne came by", "lang": "en", "expected": "rebecca and deborah and teresa and susanne came by"}
+{"input": "Antony and Martyn and Denis and Laurence came by", "lang": "en", "expected": "anthony and martin and dennis and lawrence came by"}
+{"input": "Tomas and Tobey and Macarthur and Macartney came by", "lang": "en", "expected": "thomas and toby and mcarthur and mccartney came by"}
+{"input": "Macarthy and Maccarthy and Macdonald and Mackay came by", "lang": "en", "expected": "mccarthy and mccarthy and mcdonald and mckay came by"}
+{"input": "Mackenzie and Macleod and Maclean and Macmillan came by", "lang": "en", "expected": "mckenzie and mcleod and mclean and mcmillan came by"}
+{"input": "Macintosh and Macintyre and Macnamara and Macgowan came by", "lang": "en", "expected": "mcintosh and mcintyre and mcnamara and mcgowan came by"}
+{"input": "Mohamad and Mohamed and Mohammad and Muhammad came by", "lang": "en", "expected": "mohammed and mohammed and mohammed and mohammed came by"}
+{"input": "Muhamad and Muhammed and Mouhamed and Mouhamad came by", "lang": "en", "expected": "mohammed and mohammed and mohammed and mohammed came by"}
+{"input": "Mahomet and Fatimah and Yusuf and Yusef came by", "lang": "en", "expected": "mohammed and fatima and yousef and yousef came by"}
+{"input": "Myriam and Rajeev and Alphonso and Bryan came by", "lang": "en", "expected": "miriam and rajiv and alfonso and brian came by"}
+{"input": "Geoffrey and Jeffery and Geoff and Neal came by", "lang": "en", "expected": "jeffrey and jeffrey and jeff and neil came by"}
+{"input": "Shaun and Shawn and Shayne and Stephen came by", "lang": "en", "expected": "sean and sean and shane and steven came by"}
+{"input": "Toni and Leigh and Lewis and Marc came by", "lang": "en", "expected": "tony and lee and louis and mark came by"}
+{"input": "Meghan and Nathalie and Robyn and Rodger came by", "lang": "en", "expected": "megan and natalie and robin and roger came by"}
+{"input": "Linsey and Lindsey and Zackary and Zachery came by", "lang": "en", "expected": "lindsay and lindsay and zachary and zachary came by"}
+{"input": "Zak and Sheri and Cheri and Sherrie came by", "lang": "en", "expected": "zach and sherry and sherry and sherry came by"}
+{"input": "Terri and Lori and Jaime and Jayson came by", "lang": "en", "expected": "terry and laurie and jamie and jason came by"}
+{"input": "Lesley and Lynda and Lynne and Gayle came by", "lang": "en", "expected": "leslie and linda and lynn and gail came by"}
+{"input": "Rhonda and Yvonne and Stewart and Walther came by", "lang": "en", "expected": "ronda and ivonne and stuart and walter came by"}
+{"input": "Symon and Collin and Dillon and Aron came by", "lang": "en", "expected": "simon and colin and dylan and aaron came by"}
+{"input": "Artur and Henri and Josef and Pieter came by", "lang": "en", "expected": "arthur and henry and joseph and peter came by"}
+{"input": "aaron alfonso alison allen anne anthony arthur brett brian bridget caitlin carl carol catherine cathy charlie chris christina christopher colin deborah dennis dominic douglas dylan eric fatima frederick gail gary", "lang": "en", "expected": "aaron alfonso alison allen anne anthony arthur brett brian bridget caitlin carl carol catherine cathy charlie chris christina christopher colin deborah dennis dominic douglas dylan eric fatima frederick gail gary"}
+{"input": "the et cetera works", "lang": "en", "expected": "the etc works"}
+{"input": "the et-cetera works", "lang": "en", "expected": "the etc works"}
+{"input": "the ET‑cetera works", "lang": "en", "expected": "the etc works"}
+{"input": "the et  cetera works", "lang": "en", "expected": "the etc works"}
+{"input": "the etcetera works", "lang": "en", "expected": "the etc works"}
+{"input": "the al right works", "lang": "en", "expected": "the alright works"}
+{"input": "the al-right works", "lang": "en", "expected": "the alright works"}
+{"input": "the AL‑right works", "lang": "en", "expected": "the alright works"}
+{"input": "the al  right works", "lang": "en", "expected": "the alright works"}
+{"input": "the alright works", "lang": "en", "expected": "the alright works"}
+{"input": "the all right works", "lang": "en", "expected": "the alright works"}
+{"input": "the all-right works", "lang": "en", "expected": "the alright works"}
+{"input": "the ALL‑right works", "lang": "en", "expected": "the alright works"}
+{"input": "the all  right works", "lang": "en", "expected": "the alright works"}
+{"input": "the allright works", "lang": "en", "expected": "the allright works"}
+{"input": "the how ever works", "lang": "en", "expected": "the however works"}
+{"input": "the how-ever works", "lang": "en", "expected": "the however works"}
+{"input": "the HOW‑ever works", "lang": "en", "expected": "the however works"}
+{"input": "the how  ever works", "lang": "en", "expected": "the however works"}
+{"input": "the however works", "lang": "en", "expected": "the however works"}
+{"input": "the wi fi works", "lang": "en", "expected": "the wifi works"}
+{"input": "the wi-fi works", "lang": "en", "expected": "the wifi works"}
+{"input": "the WI‑fi works", "lang": "en", "expected": "the wifi works"}
+{"input": "the wi  fi works", "lang": "en", "expected": "the wifi works"}
+{"input": "the wifi works", "lang": "en", "expected": "the wifi works"}
+{"input": "the hi fi works", "lang": "en", "expected": "the hifi works"}
+{"input": "the hi-fi works", "lang": "en", "expected": "the hifi works"}
+{"input": "the HI‑fi works", "lang": "en", "expected": "the hifi works"}
+{"input": "the hi  fi works", "lang": "en", "expected": "the hifi works"}
+{"input": "the hifi works", "lang": "en", "expected": "the hifi works"}
+{"input": "the lo fi works", "lang": "en", "expected": "the lofi works"}
+{"input": "the lo-fi works", "lang": "en", "expected": "the lofi works"}
+{"input": "the LO‑fi works", "lang": "en", "expected": "the lofi works"}
+{"input": "the lo  fi works", "lang": "en", "expected": "the lofi works"}
+{"input": "the lofi works", "lang": "en", "expected": "the lofi works"}
+{"input": "the sci fi works", "lang": "en", "expected": "the scifi works"}
+{"input": "the sci-fi works", "lang": "en", "expected": "the scifi works"}
+{"input": "the SCI‑fi works", "lang": "en", "expected": "the scifi works"}
+{"input": "the sci  fi works", "lang": "en", "expected": "the scifi works"}
+{"input": "the scifi works", "lang": "en", "expected": "the scifi works"}
+{"input": "the e mail works", "lang": "en", "expected": "the email works"}
+{"input": "the e-mail works", "lang": "en", "expected": "the email works"}
+{"input": "the E‑mail works", "lang": "en", "expected": "the email works"}
+{"input": "the e  mail works", "lang": "en", "expected": "the email works"}
+{"input": "the email works", "lang": "en", "expected": "the email works"}
+{"input": "the e book works", "lang": "en", "expected": "the ebook works"}
+{"input": "the e-book works", "lang": "en", "expected": "the ebook works"}
+{"input": "the E‑book works", "lang": "en", "expected": "the ebook works"}
+{"input": "the e  book works", "lang": "en", "expected": "the ebook works"}
+{"input": "the ebook works", "lang": "en", "expected": "the ebook works"}
+{"input": "the e commerce works", "lang": "en", "expected": "the ecommerce works"}
+{"input": "the e-commerce works", "lang": "en", "expected": "the ecommerce works"}
+{"input": "the E‑commerce works", "lang": "en", "expected": "the ecommerce works"}
+{"input": "the e  commerce works", "lang": "en", "expected": "the ecommerce works"}
+{"input": "the ecommerce works", "lang": "en", "expected": "the ecommerce works"}
+{"input": "the x ray works", "lang": "en", "expected": "the xray works"}
+{"input": "the x-ray works", "lang": "en", "expected": "the xray works"}
+{"input": "the X‑ray works", "lang": "en", "expected": "the xray works"}
+{"input": "the x  ray works", "lang": "en", "expected": "the xray works"}
+{"input": "the xray works", "lang": "en", "expected": "the xray works"}
+{"input": "the t shirt works", "lang": "en", "expected": "the tshirt works"}
+{"input": "the t-shirt works", "lang": "en", "expected": "the tshirt works"}
+{"input": "the T‑shirt works", "lang": "en", "expected": "the tshirt works"}
+{"input": "the t  shirt works", "lang": "en", "expected": "the tshirt works"}
+{"input": "the tshirt works", "lang": "en", "expected": "the tshirt works"}
+{"input": "the a m works", "lang": "en", "expected": "the am works"}
+{"input": "the a-m works", "lang": "en", "expected": "the am works"}
+{"input": "the A‑m works", "lang": "en", "expected": "the am works"}
+{"input": "the a  m works", "lang": "en", "expected": "the am works"}
+{"input": "the am works", "lang": "en", "expected": "the am works"}
+{"input": "the p m works", "lang": "en", "expected": "the pm works"}
+{"input": "the p-m works", "lang": "en", "expected": "the pm works"}
+{"input": "the P‑m works", "lang": "en", "expected": "the pm works"}
+{"input": "the p  m works", "lang": "en", "expected": "the pm works"}
+{"input": "the pm works", "lang": "en", "expected": "the pm works"}
+{"input": "the o k works", "lang": "en", "expected": "the okay works"}
+{"input": "the o-k works", "lang": "en", "expected": "the okay works"}
+{"input": "the O‑k works", "lang": "en", "expected": "the okay works"}
+{"input": "the o  k works", "lang": "en", "expected": "the okay works"}
+{"input": "the ok works", "lang": "en", "expected": "the okay works"}
+{"input": "the ooh works", "lang": "en", "expected": "the oh works"}
+{"input": "the ohh works", "lang": "en", "expected": "the oh works"}
+{"input": "the oooohhh works", "lang": "en", "expected": "the oh works"}
+{"input": "the oh works", "lang": "en", "expected": "the oh works"}
+{"input": "the ooo works", "lang": "en", "expected": "the oh works"}
+{"input": "the oooooo works", "lang": "en", "expected": "the oh works"}
+{"input": "the ok was fine", "lang": "en", "expected": "the okay was fine"}
+{"input": "the amphitheatres was fine", "lang": "en", "expected": "the amphitheaters was fine"}
+{"input": "the archaeologically was fine", "lang": "en", "expected": "the archeologically was fine"}
+{"input": "the behaviours was fine", "lang": "en", "expected": "the behaviors was fine"}
+{"input": "the canalising was fine", "lang": "en", "expected": "the canalizing was fine"}
+{"input": "the cauterising was fine", "lang": "en", "expected": "the cauterizing was fine"}
+{"input": "the civilising was fine", "lang": "en", "expected": "the civilizing was fine"}
+{"input": "the computerises was fine", "lang": "en", "expected": "the computerizes was fine"}
+{"input": "the customised was fine", "lang": "en", "expected": "the customized was fine"}
+{"input": "the demoralisation was fine", "lang": "en", "expected": "the demoralization was fine"}
+{"input": "the discoloured was fine", "lang": "en", "expected": "the discolored was fine"}
+{"input": "the economising was fine", "lang": "en", "expected": "the economizing was fine"}
+{"input": "the equalise was fine", "lang": "en", "expected": "the equalize was fine"}
+{"input": "the fantasising was fine", "lang": "en", "expected": "the fantasizing was fine"}
+{"input": "the flavoured was fine", "lang": "en", "expected": "the flavored was fine"}
+{"input": "the gaolbirds was fine", "lang": "en", "expected": "the jailbirds was fine"}
+{"input": "the grovelled was fine", "lang": "en", "expected": "the groveled was fine"}
+{"input": "the honourable was fine", "lang": "en", "expected": "the honorable was fine"}
+{"input": "the immobiliser was fine", "lang": "en", "expected": "the immobilizer was fine"}
+{"input": "the institutionalising was fine", "lang": "en", "expected": "the institutionalizing was fine"}
+{"input": "the labelled was fine", "lang": "en", "expected": "the labeled was fine"}
+{"input": "the liquidiser was fine", "lang": "en", "expected": "the liquidizer was fine"}
+{"input": "the maximised was fine", "lang": "en", "expected": "the maximized was fine"}
+{"input": "the miniaturised was fine", "lang": "en", "expected": "the miniaturized was fine"}
+{"input": "the moralised was fine", "lang": "en", "expected": "the moralized was fine"}
+{"input": "the neutralisation was fine", "lang": "en", "expected": "the neutralization was fine"}
+{"input": "the overemphasise was fine", "lang": "en", "expected": "the overemphasize was fine"}
+{"input": "the pasteurisation was fine", "lang": "en", "expected": "the pasteurization was fine"}
+{"input": "the ploughman was fine", "lang": "en", "expected": "the plowman was fine"}
+{"input": "the privatise was fine", "lang": "en", "expected": "the privatize was fine"}
+{"input": "the radicalise was fine", "lang": "en", "expected": "the radicalize was fine"}
+{"input": "the remodelling was fine", "lang": "en", "expected": "the remodeling was fine"}
+{"input": "the sanitised was fine", "lang": "en", "expected": "the sanitized was fine"}
+{"input": "the sentimentalise was fine", "lang": "en", "expected": "the sentimentalize was fine"}
+{"input": "the sodomised was fine", "lang": "en", "expected": "the sodomized was fine"}
+{"input": "the sterilising was fine", "lang": "en", "expected": "the sterilizing was fine"}
+{"input": "the synchronised was fine", "lang": "en", "expected": "the synchronized was fine"}
+{"input": "the theorises was fine", "lang": "en", "expected": "the theorizes was fine"}
+{"input": "the tunnelling was fine", "lang": "en", "expected": "the tunneling was fine"}
+{"input": "the vaporise was fine", "lang": "en", "expected": "the vaporize was fine"}
+{"input": "the westernise was fine", "lang": "en", "expected": "the westernize was fine"}
+{"input": "café résumé naïve", "lang": "en", "expected": "cafe resume naive"}
+{"input": "Crème Brûlée", "lang": "en", "expected": "creme brulee"}
+{"input": "Ångström", "lang": "en", "expected": "angstrom"}
+{"input": "smørrebrød", "lang": "en", "expected": "smorrebrod"}
+{"input": "Œuvre", "lang": "en", "expected": "oeuvre"}
+{"input": "straße", "lang": "en", "expected": "strasse"}
+{"input": "ẞ", "lang": "en", "expected": "ss"}
+{"input": "þorn", "lang": "en", "expected": "thorn"}
+{"input": "Łódź", "lang": "en", "expected": "lodz"}
+{"input": "Đorđe", "lang": "en", "expected": "dorde"}
+{"input": "æsthetic", "lang": "en", "expected": "esthetic"}
+{"input": "façade", "lang": "en", "expected": "facade"}
+{"input": "jalapeño", "lang": "en", "expected": "jalapeno"}
+{"input": "São Paulo", "lang": "en", "expected": "sao paulo"}
+{"input": "Zürich", "lang": "en", "expected": "zurich"}
+{"input": "Dvořák", "lang": "en", "expected": "dvorak"}
+{"input": "İstanbul", "lang": "en", "expected": "istanbul"}
+{"input": "ﬁne ligature", "lang": "en", "expected": "fine ligature"}
+{"input": "Ⅻ roman", "lang": "en", "expected": "xii roman"}
+{"input": "x²", "lang": "en", "expected": "x2"}
+{"input": "½ cup", "lang": "en", "expected": "one 2 cup"}
+{"input": "①", "lang": "en", "expected": "one"}
+{"input": "ｆｕｌｌｗｉｄｔｈ", "lang": "en", "expected": "fullwidth"}
+{"input": "日本語のテキスト", "lang": "en", "expected": "日本語のテキスト"}
+{"input": "中文 3 个", "lang": "en", "expected": "中文 3个"}
+{"input": "Привет мир", "lang": "en", "expected": "привет мир"}
+{"input": "مرحبا", "lang": "en", "expected": "مرحبا"}
+{"input": "שלום", "lang": "en", "expected": "שלום"}
+{"input": "नमस्ते दुनिया", "lang": "en", "expected": "नमसत दन य"}
+{"input": "🙂 emoji", "lang": "en", "expected": "emoji"}
+{"input": "rock ♫ music", "lang": "en", "expected": "rock music"}
+{"input": "a—b–c", "lang": "en", "expected": "abc"}
+{"input": "«quoted»", "lang": "en", "expected": "quoted"}
+{"input": "“smart quotes”", "lang": "en", "expected": "smart quotes"}
+{"input": "‘single’", "lang": "en", "expected": "single"}
+{"input": "C++ and C#", "lang": "en", "expected": "c and c"}
+{"input": "AT&T", "lang": "en", "expected": "at t"}
+{"input": "R&D", "lang": "en", "expected": "rd"}
+{"input": "50/50", "lang": "en", "expected": "50 50"}
+{"input": "and/or", "lang": "en", "expected": "and or"}
+{"input": "e.g.", "lang": "en", "expected": "eg"}
+{"input": "i.e.", "lang": "en", "expected": "i e"}
+{"input": "etc.", "lang": "en", "expected": "etc"}
+{"input": "et cetera", "lang": "en", "expected": "etc"}
+{"input": "vs.", "lang": "en", "expected": "vs"}
+{"input": "#hashtag", "lang": "en", "expected": "hashtag"}
+{"input": "@mention", "lang": "en", "expected": "mention"}
+{"input": "user@example.com", "lang": "en", "expected": "user example com"}
+{"input": "http://example.com/a?b=c", "lang": "en", "expected": "http example com abc"}
+{"input": "a_b", "lang": "en", "expected": "a b"}
+{"input": "snake_case_word", "lang": "en", "expected": "snake case word"}
+{"input": "tab\tseparated", "lang": "en", "expected": "tab separated"}
+{"input": "line\nbreak", "lang": "en", "expected": "line break"}
+{"input": "multiple   spaces", "lang": "en", "expected": "multiple spaces"}
+{"input": "trailing space ", "lang": "en", "expected": "trailing space"}
+{"input": " leading space", "lang": "en", "expected": "leading space"}
+{"input": "ALL CAPS SENTENCE", "lang": "en", "expected": "all caps sentence"}
+{"input": "MiXeD CaSe", "lang": "en", "expected": "mixed case"}
+{"input": "hello... world", "lang": "en", "expected": "hello world"}
+{"input": "wait—what?", "lang": "en", "expected": "wait what"}
+{"input": "so-called", "lang": "en", "expected": "so called"}
+{"input": "well-known", "lang": "en", "expected": "well known"}
+{"input": "e-mail", "lang": "en", "expected": "email"}
+{"input": "Wi-Fi", "lang": "en", "expected": "wifi"}
+{"input": "T-shirt", "lang": "en", "expected": "tshirt"}
+{"input": "x-ray", "lang": "en", "expected": "xray"}
+{"input": "sci-fi", "lang": "en", "expected": "scifi"}
+{"input": "all right", "lang": "en", "expected": "alright"}
+{"input": "al right", "lang": "en", "expected": "alright"}
+{"input": "how ever", "lang": "en", "expected": "however"}
+{"input": "e book", "lang": "en", "expected": "ebook"}
+{"input": "e commerce", "lang": "en", "expected": "ecommerce"}
+{"input": "hi fi", "lang": "en", "expected": "hifi"}
+{"input": "lo fi", "lang": "en", "expected": "lofi"}
+{"input": "o k then", "lang": "en", "expected": "okay then"}
+{"input": "it's ok", "lang": "en", "expected": "it is okay"}
+{"input": "okay", "lang": "en", "expected": "okay"}
+{"input": "OK", "lang": "en", "expected": "okay"}
+{"input": "o.k.", "lang": "en", "expected": "okay"}
+{"input": "Uh, Mr. Smith said he'd been to St. Louis at 3:00 PM, and it cost $20.50 — uh, roughly 50%.", "lang": "en", "expected": "mister smith said he had been to saint louis at 3 pm and it cost $20.50 roughly 50%"}
+{"input": "[noise] So, um, the C.E.O. — y'know — gonna announce Q3 earnings of $1.2 billion (approx).", "lang": "en", "expected": "so the ce0y know going to announce q3 earnings of $1200000000"}
+{"input": "I can't believe it's 2024; we've got twenty-one items, two and a half hours, and the b b c.", "lang": "en", "expected": "i can not believe it is 2024 we have got 21 items 2.5 hours and the bbc"}
+{"input": "The colour of the theatre's centre was grey, Dr. Kris said.", "lang": "en", "expected": "the color of the theater s center was gray doctor chris said"}
+{"input": "We'll meet at 10:00, uh, or maybe eleven o'clock, ok?", "lang": "en", "expected": "we will meet at 10 or maybe 110 clock okay"}
+{"input": "Revenue grew 12.5% year-over-year to €3.4 million in the second quarter.", "lang": "en", "expected": "revenue grew 12.5% year over year to €3400000 in the 2nd quarter"}
+{"input": "Call 1-800-555-0199 or nine one one.", "lang": "en", "expected": "call one 800 555 199 or 911"}
+{"input": "He won't go; she'll stay — that's what ma'am said.", "lang": "en", "expected": "he will not go she will stay that is what madam said"}
+{"input": "So the, uh, the c o 2 levels went from three hundred to four hundred ppm.", "lang": "en", "expected": "so the the c02 levels went from 300 to 400 ppm"}
+{"input": "In nineteen eighty four, twenty percent of the ones were sixes.", "lang": "en", "expected": "in 198420% of the ones were 6s"}

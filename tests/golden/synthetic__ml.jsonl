@@ -1,0 +1,527 @@
+{"input": "", "lang": "de", "expected": ""}
+{"input": "   ", "lang": "de", "expected": ""}
+{"input": "Hallo Welt", "lang": "de", "expected": "hallo welt"}
+{"input": "Ich habe 3 Äpfel und 21 Birnen.", "lang": "de", "expected": "ich habe drei äpfel und einundzwanzig birnen"}
+{"input": "10 000 Einwohner", "lang": "de", "expected": "zehntausend einwohner"}
+{"input": "1 000 000", "lang": "de", "expected": "eintausend null"}
+{"input": "10 000 000 000", "lang": "de", "expected": "zehntausend null"}
+{"input": "Es kostet 1.234,56 €.", "lang": "de", "expected": "es kostet eintausendzweihundertvierunddreißig sechsundfünfzig"}
+{"input": "Am 3. Oktober 2023 um 14:30 Uhr", "lang": "de", "expected": "am drei oktober zweitausenddreiundzwanzig um vierzehn dreißig uhr"}
+{"input": "12,5 %", "lang": "de", "expected": "zwölf fünf"}
+{"input": "Nummer 007", "lang": "de", "expected": "nummer sieben"}
+{"input": "1234567890123456789012345", "lang": "de", "expected": "eine Quadrillion zweihundertvierunddreißig Trilliarden fünfhundertsiebenundsechzig Trillionen achthundertneunzig Billiarden einhundertdreiundzwanzig Billionen vierhundertsechsundfünfzig Milliarden siebenhundertneunundachtzig Millionen zwölftausenddreihundertfünfundvierzig"}
+{"input": "äh ähm also", "lang": "de", "expected": "äh ähm also"}
+{"input": "euh ben voilà", "lang": "de", "expected": "euh ben voilà"}
+{"input": "eh bueno pues", "lang": "de", "expected": "eh bueno pues"}
+{"input": "ehm allora", "lang": "de", "expected": "ehm allora"}
+{"input": "é pá então", "lang": "de", "expected": "é pá então"}
+{"input": "eh nou ja", "lang": "de", "expected": "eh nou ja"}
+{"input": "uh um", "lang": "de", "expected": "uh um"}
+{"input": "C'est l'été à 20 h", "lang": "de", "expected": "c est l été à zwanzig h"}
+{"input": "Señor Núñez tiene 2 años", "lang": "de", "expected": "señor núñez tiene zwei años"}
+{"input": "Il y a 1 000 personnes", "lang": "de", "expected": "il y a eintausend personnes"}
+{"input": "São 300 mil pessoas", "lang": "de", "expected": "são dreihundert mil pessoas"}
+{"input": "Het is 25 graden", "lang": "de", "expected": "het is fünfundzwanzig graden"}
+{"input": "[ruido] hola (risas) mundo", "lang": "de", "expected": "hola mundo"}
+{"input": "<unk> test", "lang": "de", "expected": "test"}
+{"input": "«Bonjour»", "lang": "de", "expected": "bonjour"}
+{"input": "„Guten Tag“", "lang": "de", "expected": "guten tag"}
+{"input": "Straße Œuvre Ærø", "lang": "de", "expected": "straße œuvre ærø"}
+{"input": "naïve café", "lang": "de", "expected": "naïve café"}
+{"input": "Ελληνικά 5", "lang": "de", "expected": "ελληνικά fünf"}
+{"input": "Русский текст 42", "lang": "de", "expected": "русский текст zweiundvierzig"}
+{"input": "हिन्दी में 5 शब्द", "lang": "de", "expected": "हिन्दी में fünf शब्द"}
+{"input": "किताब 12 रुपये", "lang": "de", "expected": "किताब zwölf रुपये"}
+{"input": "क़िला ज़रूर", "lang": "de", "expected": "क़िला ज़रूर"}
+{"input": "日本語 3 つ", "lang": "de", "expected": "日本語 drei つ"}
+{"input": "東京は2024年", "lang": "de", "expected": "東京はzweitausendvierundzwanzig年"}
+{"input": "中文 100 个", "lang": "de", "expected": "中文 einhundert 个"}
+{"input": "我有3个苹果", "lang": "de", "expected": "我有drei个苹果"}
+{"input": "١٢٣ arabic digits", "lang": "de", "expected": "einhundertdreiundzwanzig arabic digits"}
+{"input": "２０２４ fullwidth", "lang": "de", "expected": "zweitausendvierundzwanzig fullwidth"}
+{"input": "x² ½ ①", "lang": "de", "expected": "xzwei eins zwei eins"}
+{"input": "e-mail und so", "lang": "de", "expected": "e mail und so"}
+{"input": "o'clock 3", "lang": "de", "expected": "o clock drei"}
+{"input": "50/50", "lang": "de", "expected": "fünfzig fünfzig"}
+{"input": "3.14", "lang": "de", "expected": "drei vierzehn"}
+{"input": "-5 Grad", "lang": "de", "expected": "fünf grad"}
+{"input": "+33 1 23 45 67 89", "lang": "de", "expected": "dreiunddreißig eins dreiundzwanzig fünfundvierzig siebenundsechzig neunundachtzig"}
+{"input": "tab\tsep", "lang": "de", "expected": "tab sep"}
+{"input": "line\nbreak", "lang": "de", "expected": "line break"}
+{"input": "😀 emoji", "lang": "de", "expected": "emoji"}
+{"input": "UPPER lower MiXeD", "lang": "de", "expected": "upper lower mixed"}
+{"input": "", "lang": "fr", "expected": ""}
+{"input": "   ", "lang": "fr", "expected": ""}
+{"input": "Hallo Welt", "lang": "fr", "expected": "hallo welt"}
+{"input": "Ich habe 3 Äpfel und 21 Birnen.", "lang": "fr", "expected": "ich habe trois äpfel und vingt et un birnen"}
+{"input": "10 000 Einwohner", "lang": "fr", "expected": "dix mille einwohner"}
+{"input": "1 000 000", "lang": "fr", "expected": "mille zéro"}
+{"input": "10 000 000 000", "lang": "fr", "expected": "dix mille zéro"}
+{"input": "Es kostet 1.234,56 €.", "lang": "fr", "expected": "es kostet mille deux cent trente-quatre cinquante-six"}
+{"input": "Am 3. Oktober 2023 um 14:30 Uhr", "lang": "fr", "expected": "am trois oktober deux mille vingt-trois um quatorze trente uhr"}
+{"input": "12,5 %", "lang": "fr", "expected": "douze cinq"}
+{"input": "Nummer 007", "lang": "fr", "expected": "nummer sept"}
+{"input": "1234567890123456789012345", "lang": "fr", "expected": "un quadrillion deux cent trente-quatre trilliards cinq cent soixante-sept trillions huit cent quatre-vingt-dix billiards cent vingt-trois billions quatre cent cinquante-six milliards sept cent quatre-vingt-neuf millions douze mille trois cent quarante-cinq"}
+{"input": "äh ähm also", "lang": "fr", "expected": "äh ähm also"}
+{"input": "euh ben voilà", "lang": "fr", "expected": "euh ben voilà"}
+{"input": "eh bueno pues", "lang": "fr", "expected": "eh bueno pues"}
+{"input": "ehm allora", "lang": "fr", "expected": "ehm allora"}
+{"input": "é pá então", "lang": "fr", "expected": "é pá então"}
+{"input": "eh nou ja", "lang": "fr", "expected": "eh nou ja"}
+{"input": "uh um", "lang": "fr", "expected": "uh um"}
+{"input": "C'est l'été à 20 h", "lang": "fr", "expected": "c est l été à vingt h"}
+{"input": "Señor Núñez tiene 2 años", "lang": "fr", "expected": "señor núñez tiene deux años"}
+{"input": "Il y a 1 000 personnes", "lang": "fr", "expected": "il y a mille personnes"}
+{"input": "São 300 mil pessoas", "lang": "fr", "expected": "são trois cents mil pessoas"}
+{"input": "Het is 25 graden", "lang": "fr", "expected": "het is vingt-cinq graden"}
+{"input": "[ruido] hola (risas) mundo", "lang": "fr", "expected": "hola mundo"}
+{"input": "<unk> test", "lang": "fr", "expected": "test"}
+{"input": "«Bonjour»", "lang": "fr", "expected": "bonjour"}
+{"input": "„Guten Tag“", "lang": "fr", "expected": "guten tag"}
+{"input": "Straße Œuvre Ærø", "lang": "fr", "expected": "straße œuvre ærø"}
+{"input": "naïve café", "lang": "fr", "expected": "naïve café"}
+{"input": "Ελληνικά 5", "lang": "fr", "expected": "ελληνικά cinq"}
+{"input": "Русский текст 42", "lang": "fr", "expected": "русский текст quarante-deux"}
+{"input": "हिन्दी में 5 शब्द", "lang": "fr", "expected": "हिन्दी में cinq शब्द"}
+{"input": "किताब 12 रुपये", "lang": "fr", "expected": "किताब douze रुपये"}
+{"input": "क़िला ज़रूर", "lang": "fr", "expected": "क़िला ज़रूर"}
+{"input": "日本語 3 つ", "lang": "fr", "expected": "日本語 trois つ"}
+{"input": "東京は2024年", "lang": "fr", "expected": "東京はdeux mille vingt-quatre年"}
+{"input": "中文 100 个", "lang": "fr", "expected": "中文 cent 个"}
+{"input": "我有3个苹果", "lang": "fr", "expected": "我有trois个苹果"}
+{"input": "١٢٣ arabic digits", "lang": "fr", "expected": "cent vingt-trois arabic digits"}
+{"input": "２０２４ fullwidth", "lang": "fr", "expected": "deux mille vingt-quatre fullwidth"}
+{"input": "x² ½ ①", "lang": "fr", "expected": "xdeux un deux un"}
+{"input": "e-mail und so", "lang": "fr", "expected": "e mail und so"}
+{"input": "o'clock 3", "lang": "fr", "expected": "o clock trois"}
+{"input": "50/50", "lang": "fr", "expected": "cinquante cinquante"}
+{"input": "3.14", "lang": "fr", "expected": "trois quatorze"}
+{"input": "-5 Grad", "lang": "fr", "expected": "cinq grad"}
+{"input": "+33 1 23 45 67 89", "lang": "fr", "expected": "trente-trois un vingt-trois quarante-cinq soixante-sept quatre-vingt-neuf"}
+{"input": "tab\tsep", "lang": "fr", "expected": "tab sep"}
+{"input": "line\nbreak", "lang": "fr", "expected": "line break"}
+{"input": "😀 emoji", "lang": "fr", "expected": "emoji"}
+{"input": "UPPER lower MiXeD", "lang": "fr", "expected": "upper lower mixed"}
+{"input": "", "lang": "es", "expected": ""}
+{"input": "   ", "lang": "es", "expected": ""}
+{"input": "Hallo Welt", "lang": "es", "expected": "hallo welt"}
+{"input": "Ich habe 3 Äpfel und 21 Birnen.", "lang": "es", "expected": "ich habe tres äpfel und veintiuno birnen"}
+{"input": "10 000 Einwohner", "lang": "es", "expected": "diez mil einwohner"}
+{"input": "1 000 000", "lang": "es", "expected": "mil cero"}
+{"input": "10 000 000 000", "lang": "es", "expected": "diez mil cero"}
+{"input": "Es kostet 1.234,56 €.", "lang": "es", "expected": "es kostet mil doscientos treinta y cuatro cincuenta y seis"}
+{"input": "Am 3. Oktober 2023 um 14:30 Uhr", "lang": "es", "expected": "am tres oktober dos mil veintitrés um catorce treinta uhr"}
+{"input": "12,5 %", "lang": "es", "expected": "doce cinco"}
+{"input": "Nummer 007", "lang": "es", "expected": "nummer siete"}
+{"input": "1234567890123456789012345", "lang": "es", "expected": "un cuatrillón doscientos treinta y cuatro mil quinientos sesenta y siete trillones ochocientos noventa mil ciento veintitrés billones cuatrocientos cincuenta y seis mil setecientos ochenta y nueve millones doce mil trescientos cuarenta y cinco"}
+{"input": "äh ähm also", "lang": "es", "expected": "äh ähm also"}
+{"input": "euh ben voilà", "lang": "es", "expected": "euh ben voilà"}
+{"input": "eh bueno pues", "lang": "es", "expected": "eh bueno pues"}
+{"input": "ehm allora", "lang": "es", "expected": "ehm allora"}
+{"input": "é pá então", "lang": "es", "expected": "é pá então"}
+{"input": "eh nou ja", "lang": "es", "expected": "eh nou ja"}
+{"input": "uh um", "lang": "es", "expected": "uh um"}
+{"input": "C'est l'été à 20 h", "lang": "es", "expected": "c est l été à veinte h"}
+{"input": "Señor Núñez tiene 2 años", "lang": "es", "expected": "señor núñez tiene dos años"}
+{"input": "Il y a 1 000 personnes", "lang": "es", "expected": "il y a mil personnes"}
+{"input": "São 300 mil pessoas", "lang": "es", "expected": "são trescientos mil pessoas"}
+{"input": "Het is 25 graden", "lang": "es", "expected": "het is veinticinco graden"}
+{"input": "[ruido] hola (risas) mundo", "lang": "es", "expected": "hola mundo"}
+{"input": "<unk> test", "lang": "es", "expected": "test"}
+{"input": "«Bonjour»", "lang": "es", "expected": "bonjour"}
+{"input": "„Guten Tag“", "lang": "es", "expected": "guten tag"}
+{"input": "Straße Œuvre Ærø", "lang": "es", "expected": "straße œuvre ærø"}
+{"input": "naïve café", "lang": "es", "expected": "naïve café"}
+{"input": "Ελληνικά 5", "lang": "es", "expected": "ελληνικά cinco"}
+{"input": "Русский текст 42", "lang": "es", "expected": "русский текст cuarenta y dos"}
+{"input": "हिन्दी में 5 शब्द", "lang": "es", "expected": "हिन्दी में cinco शब्द"}
+{"input": "किताब 12 रुपये", "lang": "es", "expected": "किताब doce रुपये"}
+{"input": "क़िला ज़रूर", "lang": "es", "expected": "क़िला ज़रूर"}
+{"input": "日本語 3 つ", "lang": "es", "expected": "日本語 tres つ"}
+{"input": "東京は2024年", "lang": "es", "expected": "東京はdos mil veinticuatro年"}
+{"input": "中文 100 个", "lang": "es", "expected": "中文 cien 个"}
+{"input": "我有3个苹果", "lang": "es", "expected": "我有tres个苹果"}
+{"input": "١٢٣ arabic digits", "lang": "es", "expected": "ciento veintitrés arabic digits"}
+{"input": "２０２４ fullwidth", "lang": "es", "expected": "dos mil veinticuatro fullwidth"}
+{"input": "x² ½ ①", "lang": "es", "expected": "xdos uno dos uno"}
+{"input": "e-mail und so", "lang": "es", "expected": "e mail und so"}
+{"input": "o'clock 3", "lang": "es", "expected": "o clock tres"}
+{"input": "50/50", "lang": "es", "expected": "cincuenta cincuenta"}
+{"input": "3.14", "lang": "es", "expected": "tres catorce"}
+{"input": "-5 Grad", "lang": "es", "expected": "cinco grad"}
+{"input": "+33 1 23 45 67 89", "lang": "es", "expected": "treinta y tres uno veintitrés cuarenta y cinco sesenta y siete ochenta y nueve"}
+{"input": "tab\tsep", "lang": "es", "expected": "tab sep"}
+{"input": "line\nbreak", "lang": "es", "expected": "line break"}
+{"input": "😀 emoji", "lang": "es", "expected": "emoji"}
+{"input": "UPPER lower MiXeD", "lang": "es", "expected": "upper lower mixed"}
+{"input": "", "lang": "it", "expected": ""}
+{"input": "   ", "lang": "it", "expected": ""}
+{"input": "Hallo Welt", "lang": "it", "expected": "hallo welt"}
+{"input": "Ich habe 3 Äpfel und 21 Birnen.", "lang": "it", "expected": "ich habe tre äpfel und ventuno birnen"}
+{"input": "10 000 Einwohner", "lang": "it", "expected": "diecimila einwohner"}
+{"input": "1 000 000", "lang": "it", "expected": "mille zero"}
+{"input": "10 000 000 000", "lang": "it", "expected": "diecimila zero"}
+{"input": "Es kostet 1.234,56 €.", "lang": "it", "expected": "es kostet milleduecentotrentaquattro cinquantasei"}
+{"input": "Am 3. Oktober 2023 um 14:30 Uhr", "lang": "it", "expected": "am tre oktober duemilaventitre um quattordici trenta uhr"}
+{"input": "12,5 %", "lang": "it", "expected": "dodici cinque"}
+{"input": "Nummer 007", "lang": "it", "expected": "nummer sette"}
+{"input": "1234567890123456789012345", "lang": "it", "expected": "un quadrilione, duecentotrentaquattro triliardi, cinquecentosessantasette trilioni, ottocentonovanta biliardi, centoventitré bilioni, quattrocentocinquantasei miliardi, settecentottantanove milioni e dodicimilatrecentoquarantacinque"}
+{"input": "äh ähm also", "lang": "it", "expected": "äh ähm also"}
+{"input": "euh ben voilà", "lang": "it", "expected": "euh ben voilà"}
+{"input": "eh bueno pues", "lang": "it", "expected": "eh bueno pues"}
+{"input": "ehm allora", "lang": "it", "expected": "ehm allora"}
+{"input": "é pá então", "lang": "it", "expected": "é pá então"}
+{"input": "eh nou ja", "lang": "it", "expected": "eh nou ja"}
+{"input": "uh um", "lang": "it", "expected": "uh um"}
+{"input": "C'est l'été à 20 h", "lang": "it", "expected": "c est l été à venti h"}
+{"input": "Señor Núñez tiene 2 años", "lang": "it", "expected": "señor núñez tiene due años"}
+{"input": "Il y a 1 000 personnes", "lang": "it", "expected": "il y a mille personnes"}
+{"input": "São 300 mil pessoas", "lang": "it", "expected": "são trecento mil pessoas"}
+{"input": "Het is 25 graden", "lang": "it", "expected": "het is venticinque graden"}
+{"input": "[ruido] hola (risas) mundo", "lang": "it", "expected": "hola mundo"}
+{"input": "<unk> test", "lang": "it", "expected": "test"}
+{"input": "«Bonjour»", "lang": "it", "expected": "bonjour"}
+{"input": "„Guten Tag“", "lang": "it", "expected": "guten tag"}
+{"input": "Straße Œuvre Ærø", "lang": "it", "expected": "straße œuvre ærø"}
+{"input": "naïve café", "lang": "it", "expected": "naïve café"}
+{"input": "Ελληνικά 5", "lang": "it", "expected": "ελληνικά cinque"}
+{"input": "Русский текст 42", "lang": "it", "expected": "русский текст quarantadue"}
+{"input": "हिन्दी में 5 शब्द", "lang": "it", "expected": "हिन्दी में cinque शब्द"}
+{"input": "किताब 12 रुपये", "lang": "it", "expected": "किताब dodici रुपये"}
+{"input": "क़िला ज़रूर", "lang": "it", "expected": "क़िला ज़रूर"}
+{"input": "日本語 3 つ", "lang": "it", "expected": "日本語 tre つ"}
+{"input": "東京は2024年", "lang": "it", "expected": "東京はduemilaventiquattro年"}
+{"input": "中文 100 个", "lang": "it", "expected": "中文 cento 个"}
+{"input": "我有3个苹果", "lang": "it", "expected": "我有tre个苹果"}
+{"input": "١٢٣ arabic digits", "lang": "it", "expected": "centoventitre arabic digits"}
+{"input": "２０２４ fullwidth", "lang": "it", "expected": "duemilaventiquattro fullwidth"}
+{"input": "x² ½ ①", "lang": "it", "expected": "xdue uno due uno"}
+{"input": "e-mail und so", "lang": "it", "expected": "e mail und so"}
+{"input": "o'clock 3", "lang": "it", "expected": "o clock tre"}
+{"input": "50/50", "lang": "it", "expected": "cinquanta cinquanta"}
+{"input": "3.14", "lang": "it", "expected": "tre quattordici"}
+{"input": "-5 Grad", "lang": "it", "expected": "cinque grad"}
+{"input": "+33 1 23 45 67 89", "lang": "it", "expected": "trentatré uno ventitré quarantacinque sessantasette ottantanove"}
+{"input": "tab\tsep", "lang": "it", "expected": "tab sep"}
+{"input": "line\nbreak", "lang": "it", "expected": "line break"}
+{"input": "😀 emoji", "lang": "it", "expected": "emoji"}
+{"input": "UPPER lower MiXeD", "lang": "it", "expected": "upper lower mixed"}
+{"input": "", "lang": "pt", "expected": ""}
+{"input": "   ", "lang": "pt", "expected": ""}
+{"input": "Hallo Welt", "lang": "pt", "expected": "hallo welt"}
+{"input": "Ich habe 3 Äpfel und 21 Birnen.", "lang": "pt", "expected": "ich habe três äpfel und vinte e um birnen"}
+{"input": "10 000 Einwohner", "lang": "pt", "expected": "dez mil einwohner"}
+{"input": "1 000 000", "lang": "pt", "expected": "mil zero"}
+{"input": "10 000 000 000", "lang": "pt", "expected": "dez mil zero"}
+{"input": "Es kostet 1.234,56 €.", "lang": "pt", "expected": "es kostet mil duzentos e trinta e quatro cinquenta e seis"}
+{"input": "Am 3. Oktober 2023 um 14:30 Uhr", "lang": "pt", "expected": "am três oktober dois mil e vinte e três um catorze trinta uhr"}
+{"input": "12,5 %", "lang": "pt", "expected": "doze cinco"}
+{"input": "Nummer 007", "lang": "pt", "expected": "nummer sete"}
+{"input": "1234567890123456789012345", "lang": "pt", "expected": "um quatrilião e duzentos e trinta e quatro mil quinhentos e sessenta e sete triliões e oitocentos e noventa mil cento e vinte e três biliões quatrocentos e cinquenta e seis mil setecentos e oitenta e nove milhões e doze mil trezentos e quarenta e cinco"}
+{"input": "äh ähm also", "lang": "pt", "expected": "äh ähm also"}
+{"input": "euh ben voilà", "lang": "pt", "expected": "euh ben voilà"}
+{"input": "eh bueno pues", "lang": "pt", "expected": "eh bueno pues"}
+{"input": "ehm allora", "lang": "pt", "expected": "ehm allora"}
+{"input": "é pá então", "lang": "pt", "expected": "é pá então"}
+{"input": "eh nou ja", "lang": "pt", "expected": "eh nou ja"}
+{"input": "uh um", "lang": "pt", "expected": "uh um"}
+{"input": "C'est l'été à 20 h", "lang": "pt", "expected": "c est l été à vinte h"}
+{"input": "Señor Núñez tiene 2 años", "lang": "pt", "expected": "señor núñez tiene dois años"}
+{"input": "Il y a 1 000 personnes", "lang": "pt", "expected": "il y a mil personnes"}
+{"input": "São 300 mil pessoas", "lang": "pt", "expected": "são trezentos mil pessoas"}
+{"input": "Het is 25 graden", "lang": "pt", "expected": "het is vinte e cinco graden"}
+{"input": "[ruido] hola (risas) mundo", "lang": "pt", "expected": "hola mundo"}
+{"input": "<unk> test", "lang": "pt", "expected": "test"}
+{"input": "«Bonjour»", "lang": "pt", "expected": "bonjour"}
+{"input": "„Guten Tag“", "lang": "pt", "expected": "guten tag"}
+{"input": "Straße Œuvre Ærø", "lang": "pt", "expected": "straße œuvre ærø"}
+{"input": "naïve café", "lang": "pt", "expected": "naïve café"}
+{"input": "Ελληνικά 5", "lang": "pt", "expected": "ελληνικά cinco"}
+{"input": "Русский текст 42", "lang": "pt", "expected": "русский текст quarenta e dois"}
+{"input": "हिन्दी में 5 शब्द", "lang": "pt", "expected": "हिन्दी में cinco शब्द"}
+{"input": "किताब 12 रुपये", "lang": "pt", "expected": "किताब doze रुपये"}
+{"input": "क़िला ज़रूर", "lang": "pt", "expected": "क़िला ज़रूर"}
+{"input": "日本語 3 つ", "lang": "pt", "expected": "日本語 três つ"}
+{"input": "東京は2024年", "lang": "pt", "expected": "東京はdois mil e vinte e quatro年"}
+{"input": "中文 100 个", "lang": "pt", "expected": "中文 cem 个"}
+{"input": "我有3个苹果", "lang": "pt", "expected": "我有três个苹果"}
+{"input": "١٢٣ arabic digits", "lang": "pt", "expected": "cento e vinte e três arabic digits"}
+{"input": "２０２４ fullwidth", "lang": "pt", "expected": "dois mil e vinte e quatro fullwidth"}
+{"input": "x² ½ ①", "lang": "pt", "expected": "xdois um dois um"}
+{"input": "e-mail und so", "lang": "pt", "expected": "e mail und so"}
+{"input": "o'clock 3", "lang": "pt", "expected": "o clock três"}
+{"input": "50/50", "lang": "pt", "expected": "cinquenta cinquenta"}
+{"input": "3.14", "lang": "pt", "expected": "três catorze"}
+{"input": "-5 Grad", "lang": "pt", "expected": "cinco grad"}
+{"input": "+33 1 23 45 67 89", "lang": "pt", "expected": "trinta e três um vinte e três quarenta e cinco sessenta e sete oitenta e nove"}
+{"input": "tab\tsep", "lang": "pt", "expected": "tab sep"}
+{"input": "line\nbreak", "lang": "pt", "expected": "line break"}
+{"input": "😀 emoji", "lang": "pt", "expected": "emoji"}
+{"input": "UPPER lower MiXeD", "lang": "pt", "expected": "upper lower mixed"}
+{"input": "", "lang": "nl", "expected": ""}
+{"input": "   ", "lang": "nl", "expected": ""}
+{"input": "Hallo Welt", "lang": "nl", "expected": "hallo welt"}
+{"input": "Ich habe 3 Äpfel und 21 Birnen.", "lang": "nl", "expected": "ich habe drie äpfel und eenentwintig birnen"}
+{"input": "10 000 Einwohner", "lang": "nl", "expected": "tienduizend einwohner"}
+{"input": "1 000 000", "lang": "nl", "expected": "duizend nul"}
+{"input": "10 000 000 000", "lang": "nl", "expected": "tienduizend nul"}
+{"input": "Es kostet 1.234,56 €.", "lang": "nl", "expected": "es kostet duizendtweehonderdvierendertig zesenvijftig"}
+{"input": "Am 3. Oktober 2023 um 14:30 Uhr", "lang": "nl", "expected": "am drie oktober tweeduizenddrieëntwintig um veertien dertig uhr"}
+{"input": "12,5 %", "lang": "nl", "expected": "twaalf vijf"}
+{"input": "Nummer 007", "lang": "nl", "expected": "nummer zeven"}
+{"input": "1234567890123456789012345", "lang": "nl", "expected": "een quadriljoen tweehonderdvierendertig triljard vijfhonderdzevenenzestig triljoen achthonderdnegentig biljard honderddrieëntwintig biljoen vierhonderdzesenvijftig miljard zevenhonderdnegenentachtig miljoen twaalfduizenddriehonderdvijfenveertig"}
+{"input": "äh ähm also", "lang": "nl", "expected": "äh ähm also"}
+{"input": "euh ben voilà", "lang": "nl", "expected": "euh ben voilà"}
+{"input": "eh bueno pues", "lang": "nl", "expected": "eh bueno pues"}
+{"input": "ehm allora", "lang": "nl", "expected": "ehm allora"}
+{"input": "é pá então", "lang": "nl", "expected": "é pá então"}
+{"input": "eh nou ja", "lang": "nl", "expected": "eh nou ja"}
+{"input": "uh um", "lang": "nl", "expected": "uh um"}
+{"input": "C'est l'été à 20 h", "lang": "nl", "expected": "c est l été à twintig h"}
+{"input": "Señor Núñez tiene 2 años", "lang": "nl", "expected": "señor núñez tiene twee años"}
+{"input": "Il y a 1 000 personnes", "lang": "nl", "expected": "il y a duizend personnes"}
+{"input": "São 300 mil pessoas", "lang": "nl", "expected": "são driehonderd mil pessoas"}
+{"input": "Het is 25 graden", "lang": "nl", "expected": "het is vijfentwintig graden"}
+{"input": "[ruido] hola (risas) mundo", "lang": "nl", "expected": "hola mundo"}
+{"input": "<unk> test", "lang": "nl", "expected": "test"}
+{"input": "«Bonjour»", "lang": "nl", "expected": "bonjour"}
+{"input": "„Guten Tag“", "lang": "nl", "expected": "guten tag"}
+{"input": "Straße Œuvre Ærø", "lang": "nl", "expected": "straße œuvre ærø"}
+{"input": "naïve café", "lang": "nl", "expected": "naïve café"}
+{"input": "Ελληνικά 5", "lang": "nl", "expected": "ελληνικά vijf"}
+{"input": "Русский текст 42", "lang": "nl", "expected": "русский текст tweeënveertig"}
+{"input": "हिन्दी में 5 शब्द", "lang": "nl", "expected": "हिन्दी में vijf शब्द"}
+{"input": "किताब 12 रुपये", "lang": "nl", "expected": "किताब twaalf रुपये"}
+{"input": "क़िला ज़रूर", "lang": "nl", "expected": "क़िला ज़रूर"}
+{"input": "日本語 3 つ", "lang": "nl", "expected": "日本語 drie つ"}
+{"input": "東京は2024年", "lang": "nl", "expected": "東京はtweeduizendvierentwintig年"}
+{"input": "中文 100 个", "lang": "nl", "expected": "中文 honderd 个"}
+{"input": "我有3个苹果", "lang": "nl", "expected": "我有drie个苹果"}
+{"input": "١٢٣ arabic digits", "lang": "nl", "expected": "honderddrieëntwintig arabic digits"}
+{"input": "２０２４ fullwidth", "lang": "nl", "expected": "tweeduizendvierentwintig fullwidth"}
+{"input": "x² ½ ①", "lang": "nl", "expected": "xtwee één twee één"}
+{"input": "e-mail und so", "lang": "nl", "expected": "e mail und so"}
+{"input": "o'clock 3", "lang": "nl", "expected": "o clock drie"}
+{"input": "50/50", "lang": "nl", "expected": "vijftig vijftig"}
+{"input": "3.14", "lang": "nl", "expected": "drie veertien"}
+{"input": "-5 Grad", "lang": "nl", "expected": "vijf grad"}
+{"input": "+33 1 23 45 67 89", "lang": "nl", "expected": "drieëndertig één drieëntwintig vijfenveertig zevenenzestig negenentachtig"}
+{"input": "tab\tsep", "lang": "nl", "expected": "tab sep"}
+{"input": "line\nbreak", "lang": "nl", "expected": "line break"}
+{"input": "😀 emoji", "lang": "nl", "expected": "emoji"}
+{"input": "UPPER lower MiXeD", "lang": "nl", "expected": "upper lower mixed"}
+{"input": "", "lang": "hi", "expected": ""}
+{"input": "   ", "lang": "hi", "expected": ""}
+{"input": "Hallo Welt", "lang": "hi", "expected": "hallo welt"}
+{"input": "Ich habe 3 Äpfel und 21 Birnen.", "lang": "hi", "expected": "ich habe 3 äpfel und 21 birnen"}
+{"input": "10 000 Einwohner", "lang": "hi", "expected": "10000 einwohner"}
+{"input": "1 000 000", "lang": "hi", "expected": "1000 000"}
+{"input": "10 000 000 000", "lang": "hi", "expected": "10000 000000"}
+{"input": "Es kostet 1.234,56 €.", "lang": "hi", "expected": "es kostet 1234 56"}
+{"input": "Am 3. Oktober 2023 um 14:30 Uhr", "lang": "hi", "expected": "am 3 oktober 2023 um 14 30 uhr"}
+{"input": "12,5 %", "lang": "hi", "expected": "12 5"}
+{"input": "Nummer 007", "lang": "hi", "expected": "nummer 007"}
+{"input": "1234567890123456789012345", "lang": "hi", "expected": "1234567890123456789012345"}
+{"input": "äh ähm also", "lang": "hi", "expected": "äh ähm also"}
+{"input": "euh ben voilà", "lang": "hi", "expected": "euh ben voilà"}
+{"input": "eh bueno pues", "lang": "hi", "expected": "eh bueno pues"}
+{"input": "ehm allora", "lang": "hi", "expected": "ehm allora"}
+{"input": "é pá então", "lang": "hi", "expected": "é pá então"}
+{"input": "eh nou ja", "lang": "hi", "expected": "eh nou ja"}
+{"input": "uh um", "lang": "hi", "expected": "uh um"}
+{"input": "C'est l'été à 20 h", "lang": "hi", "expected": "c est l été à 20 h"}
+{"input": "Señor Núñez tiene 2 años", "lang": "hi", "expected": "señor núñez tiene 2 años"}
+{"input": "Il y a 1 000 personnes", "lang": "hi", "expected": "il y a 1000 personnes"}
+{"input": "São 300 mil pessoas", "lang": "hi", "expected": "são 300 mil pessoas"}
+{"input": "Het is 25 graden", "lang": "hi", "expected": "het is 25 graden"}
+{"input": "[ruido] hola (risas) mundo", "lang": "hi", "expected": "hola mundo"}
+{"input": "<unk> test", "lang": "hi", "expected": "test"}
+{"input": "«Bonjour»", "lang": "hi", "expected": "bonjour"}
+{"input": "„Guten Tag“", "lang": "hi", "expected": "guten tag"}
+{"input": "Straße Œuvre Ærø", "lang": "hi", "expected": "straße œuvre ærø"}
+{"input": "naïve café", "lang": "hi", "expected": "naïve café"}
+{"input": "Ελληνικά 5", "lang": "hi", "expected": "ελληνικά 5"}
+{"input": "Русский текст 42", "lang": "hi", "expected": "русский текст 42"}
+{"input": "हिन्दी में 5 शब्द", "lang": "hi", "expected": "हिन्दी में 5 शब्द"}
+{"input": "किताब 12 रुपये", "lang": "hi", "expected": "किताब 12 रुपये"}
+{"input": "क़िला ज़रूर", "lang": "hi", "expected": "क़िला ज़रूर"}
+{"input": "日本語 3 つ", "lang": "hi", "expected": "日本語 3 つ"}
+{"input": "東京は2024年", "lang": "hi", "expected": "東京は2024年"}
+{"input": "中文 100 个", "lang": "hi", "expected": "中文 100 个"}
+{"input": "我有3个苹果", "lang": "hi", "expected": "我有3个苹果"}
+{"input": "١٢٣ arabic digits", "lang": "hi", "expected": "١٢٣ arabic digits"}
+{"input": "２０２４ fullwidth", "lang": "hi", "expected": "2024 fullwidth"}
+{"input": "x² ½ ①", "lang": "hi", "expected": "x2 1 2 1"}
+{"input": "e-mail und so", "lang": "hi", "expected": "e mail und so"}
+{"input": "o'clock 3", "lang": "hi", "expected": "o clock 3"}
+{"input": "50/50", "lang": "hi", "expected": "50 50"}
+{"input": "3.14", "lang": "hi", "expected": "3 14"}
+{"input": "-5 Grad", "lang": "hi", "expected": "5 grad"}
+{"input": "+33 1 23 45 67 89", "lang": "hi", "expected": "33 1 23 45 67 89"}
+{"input": "tab\tsep", "lang": "hi", "expected": "tab sep"}
+{"input": "line\nbreak", "lang": "hi", "expected": "line break"}
+{"input": "😀 emoji", "lang": "hi", "expected": "emoji"}
+{"input": "UPPER lower MiXeD", "lang": "hi", "expected": "upper lower mixed"}
+{"input": "", "lang": "ja", "expected": ""}
+{"input": "   ", "lang": "ja", "expected": ""}
+{"input": "Hallo Welt", "lang": "ja", "expected": "hallo welt"}
+{"input": "Ich habe 3 Äpfel und 21 Birnen.", "lang": "ja", "expected": "ich habe 三 äpfel und 二十一 birnen"}
+{"input": "10 000 Einwohner", "lang": "ja", "expected": "一万 einwohner"}
+{"input": "1 000 000", "lang": "ja", "expected": "千 零"}
+{"input": "10 000 000 000", "lang": "ja", "expected": "一万 零"}
+{"input": "Es kostet 1.234,56 €.", "lang": "ja", "expected": "es kostet 千二百三十四 五十六"}
+{"input": "Am 3. Oktober 2023 um 14:30 Uhr", "lang": "ja", "expected": "am 三 oktober 二千二十三 um 十四 三十 uhr"}
+{"input": "12,5 %", "lang": "ja", "expected": "十二 五"}
+{"input": "Nummer 007", "lang": "ja", "expected": "nummer 七"}
+{"input": "1234567890123456789012345", "lang": "ja", "expected": "一秭二千三百四十五垓六千七百八十九京百二十三兆四千五百六十七億八千九百一万二千三百四十五"}
+{"input": "äh ähm also", "lang": "ja", "expected": "äh ähm also"}
+{"input": "euh ben voilà", "lang": "ja", "expected": "euh ben voilà"}
+{"input": "eh bueno pues", "lang": "ja", "expected": "eh bueno pues"}
+{"input": "ehm allora", "lang": "ja", "expected": "ehm allora"}
+{"input": "é pá então", "lang": "ja", "expected": "é pá então"}
+{"input": "eh nou ja", "lang": "ja", "expected": "eh nou ja"}
+{"input": "uh um", "lang": "ja", "expected": "uh um"}
+{"input": "C'est l'été à 20 h", "lang": "ja", "expected": "c est l été à 二十 h"}
+{"input": "Señor Núñez tiene 2 años", "lang": "ja", "expected": "señor núñez tiene 二 años"}
+{"input": "Il y a 1 000 personnes", "lang": "ja", "expected": "il y a 千 personnes"}
+{"input": "São 300 mil pessoas", "lang": "ja", "expected": "são 三百 mil pessoas"}
+{"input": "Het is 25 graden", "lang": "ja", "expected": "het is 二十五 graden"}
+{"input": "[ruido] hola (risas) mundo", "lang": "ja", "expected": "hola mundo"}
+{"input": "<unk> test", "lang": "ja", "expected": "test"}
+{"input": "«Bonjour»", "lang": "ja", "expected": "bonjour"}
+{"input": "„Guten Tag“", "lang": "ja", "expected": "guten tag"}
+{"input": "Straße Œuvre Ærø", "lang": "ja", "expected": "straße œuvre ærø"}
+{"input": "naïve café", "lang": "ja", "expected": "naïve café"}
+{"input": "Ελληνικά 5", "lang": "ja", "expected": "ελληνικά 五"}
+{"input": "Русский текст 42", "lang": "ja", "expected": "русский текст 四十二"}
+{"input": "हिन्दी में 5 शब्द", "lang": "ja", "expected": "हिन्दी में 五 शब्द"}
+{"input": "किताब 12 रुपये", "lang": "ja", "expected": "किताब 十二 रुपये"}
+{"input": "क़िला ज़रूर", "lang": "ja", "expected": "क़िला ज़रूर"}
+{"input": "日本語 3 つ", "lang": "ja", "expected": "日本語 三 つ"}
+{"input": "東京は2024年", "lang": "ja", "expected": "東京は二千二十四年"}
+{"input": "中文 100 个", "lang": "ja", "expected": "中文 百 个"}
+{"input": "我有3个苹果", "lang": "ja", "expected": "我有三个苹果"}
+{"input": "١٢٣ arabic digits", "lang": "ja", "expected": "百二十三 arabic digits"}
+{"input": "２０２４ fullwidth", "lang": "ja", "expected": "二千二十四 fullwidth"}
+{"input": "x² ½ ①", "lang": "ja", "expected": "x二 一 二 一"}
+{"input": "e-mail und so", "lang": "ja", "expected": "e mail und so"}
+{"input": "o'clock 3", "lang": "ja", "expected": "o clock 三"}
+{"input": "50/50", "lang": "ja", "expected": "五十 五十"}
+{"input": "3.14", "lang": "ja", "expected": "三 十四"}
+{"input": "-5 Grad", "lang": "ja", "expected": "五 grad"}
+{"input": "+33 1 23 45 67 89", "lang": "ja", "expected": "三十三 一 二十三 四十五 六十七 八十九"}
+{"input": "tab\tsep", "lang": "ja", "expected": "tab sep"}
+{"input": "line\nbreak", "lang": "ja", "expected": "line break"}
+{"input": "😀 emoji", "lang": "ja", "expected": "emoji"}
+{"input": "UPPER lower MiXeD", "lang": "ja", "expected": "upper lower mixed"}
+{"input": "", "lang": "zh", "expected": ""}
+{"input": "   ", "lang": "zh", "expected": ""}
+{"input": "Hallo Welt", "lang": "zh", "expected": "hallo welt"}
+{"input": "Ich habe 3 Äpfel und 21 Birnen.", "lang": "zh", "expected": "ich habe 3 äpfel und 21 birnen"}
+{"input": "10 000 Einwohner", "lang": "zh", "expected": "10000 einwohner"}
+{"input": "1 000 000", "lang": "zh", "expected": "1000 000"}
+{"input": "10 000 000 000", "lang": "zh", "expected": "10000 000000"}
+{"input": "Es kostet 1.234,56 €.", "lang": "zh", "expected": "es kostet 1234 56"}
+{"input": "Am 3. Oktober 2023 um 14:30 Uhr", "lang": "zh", "expected": "am 3 oktober 2023 um 14 30 uhr"}
+{"input": "12,5 %", "lang": "zh", "expected": "12 5"}
+{"input": "Nummer 007", "lang": "zh", "expected": "nummer 007"}
+{"input": "1234567890123456789012345", "lang": "zh", "expected": "1234567890123456789012345"}
+{"input": "äh ähm also", "lang": "zh", "expected": "äh ähm also"}
+{"input": "euh ben voilà", "lang": "zh", "expected": "euh ben voilà"}
+{"input": "eh bueno pues", "lang": "zh", "expected": "eh bueno pues"}
+{"input": "ehm allora", "lang": "zh", "expected": "ehm allora"}
+{"input": "é pá então", "lang": "zh", "expected": "é pá então"}
+{"input": "eh nou ja", "lang": "zh", "expected": "eh nou ja"}
+{"input": "uh um", "lang": "zh", "expected": "uh um"}
+{"input": "C'est l'été à 20 h", "lang": "zh", "expected": "c est l été à 20 h"}
+{"input": "Señor Núñez tiene 2 años", "lang": "zh", "expected": "señor núñez tiene 2 años"}
+{"input": "Il y a 1 000 personnes", "lang": "zh", "expected": "il y a 1000 personnes"}
+{"input": "São 300 mil pessoas", "lang": "zh", "expected": "são 300 mil pessoas"}
+{"input": "Het is 25 graden", "lang": "zh", "expected": "het is 25 graden"}
+{"input": "[ruido] hola (risas) mundo", "lang": "zh", "expected": "hola mundo"}
+{"input": "<unk> test", "lang": "zh", "expected": "test"}
+{"input": "«Bonjour»", "lang": "zh", "expected": "bonjour"}
+{"input": "„Guten Tag“", "lang": "zh", "expected": "guten tag"}
+{"input": "Straße Œuvre Ærø", "lang": "zh", "expected": "straße œuvre ærø"}
+{"input": "naïve café", "lang": "zh", "expected": "naïve café"}
+{"input": "Ελληνικά 5", "lang": "zh", "expected": "ελληνικά 5"}
+{"input": "Русский текст 42", "lang": "zh", "expected": "русский текст 42"}
+{"input": "हिन्दी में 5 शब्द", "lang": "zh", "expected": "हिन्दी में 5 शब्द"}
+{"input": "किताब 12 रुपये", "lang": "zh", "expected": "किताब 12 रुपये"}
+{"input": "क़िला ज़रूर", "lang": "zh", "expected": "क़िला ज़रूर"}
+{"input": "日本語 3 つ", "lang": "zh", "expected": "日本語 3 つ"}
+{"input": "東京は2024年", "lang": "zh", "expected": "東京は2024年"}
+{"input": "中文 100 个", "lang": "zh", "expected": "中文 100 个"}
+{"input": "我有3个苹果", "lang": "zh", "expected": "我有3个苹果"}
+{"input": "١٢٣ arabic digits", "lang": "zh", "expected": "١٢٣ arabic digits"}
+{"input": "２０２４ fullwidth", "lang": "zh", "expected": "2024 fullwidth"}
+{"input": "x² ½ ①", "lang": "zh", "expected": "x2 1 2 1"}
+{"input": "e-mail und so", "lang": "zh", "expected": "e mail und so"}
+{"input": "o'clock 3", "lang": "zh", "expected": "o clock 3"}
+{"input": "50/50", "lang": "zh", "expected": "50 50"}
+{"input": "3.14", "lang": "zh", "expected": "3 14"}
+{"input": "-5 Grad", "lang": "zh", "expected": "5 grad"}
+{"input": "+33 1 23 45 67 89", "lang": "zh", "expected": "33 1 23 45 67 89"}
+{"input": "tab\tsep", "lang": "zh", "expected": "tab sep"}
+{"input": "line\nbreak", "lang": "zh", "expected": "line break"}
+{"input": "😀 emoji", "lang": "zh", "expected": "emoji"}
+{"input": "UPPER lower MiXeD", "lang": "zh", "expected": "upper lower mixed"}
+{"input": "", "lang": null, "expected": ""}
+{"input": "   ", "lang": null, "expected": ""}
+{"input": "Hallo Welt", "lang": null, "expected": "hallo welt"}
+{"input": "Ich habe 3 Äpfel und 21 Birnen.", "lang": null, "expected": "ich habe 3 äpfel und 21 birnen"}
+{"input": "10 000 Einwohner", "lang": null, "expected": "10 000 einwohner"}
+{"input": "1 000 000", "lang": null, "expected": "1 000 000"}
+{"input": "10 000 000 000", "lang": null, "expected": "10 000 000 000"}
+{"input": "Es kostet 1.234,56 €.", "lang": null, "expected": "es kostet 1 234 56"}
+{"input": "Am 3. Oktober 2023 um 14:30 Uhr", "lang": null, "expected": "am 3 oktober 2023 um 14 30 uhr"}
+{"input": "12,5 %", "lang": null, "expected": "12 5"}
+{"input": "Nummer 007", "lang": null, "expected": "nummer 007"}
+{"input": "1234567890123456789012345", "lang": null, "expected": "1234567890123456789012345"}
+{"input": "äh ähm also", "lang": null, "expected": "äh ähm also"}
+{"input": "euh ben voilà", "lang": null, "expected": "euh ben voilà"}
+{"input": "eh bueno pues", "lang": null, "expected": "eh bueno pues"}
+{"input": "ehm allora", "lang": null, "expected": "ehm allora"}
+{"input": "é pá então", "lang": null, "expected": "é pá então"}
+{"input": "eh nou ja", "lang": null, "expected": "eh nou ja"}
+{"input": "uh um", "lang": null, "expected": "uh um"}
+{"input": "C'est l'été à 20 h", "lang": null, "expected": "c est l été à 20 h"}
+{"input": "Señor Núñez tiene 2 años", "lang": null, "expected": "señor núñez tiene 2 años"}
+{"input": "Il y a 1 000 personnes", "lang": null, "expected": "il y a 1 000 personnes"}
+{"input": "São 300 mil pessoas", "lang": null, "expected": "são 300 mil pessoas"}
+{"input": "Het is 25 graden", "lang": null, "expected": "het is 25 graden"}
+{"input": "[ruido] hola (risas) mundo", "lang": null, "expected": "hola mundo"}
+{"input": "<unk> test", "lang": null, "expected": "test"}
+{"input": "«Bonjour»", "lang": null, "expected": "bonjour"}
+{"input": "„Guten Tag“", "lang": null, "expected": "guten tag"}
+{"input": "Straße Œuvre Ærø", "lang": null, "expected": "straße œuvre ærø"}
+{"input": "naïve café", "lang": null, "expected": "naïve café"}
+{"input": "Ελληνικά 5", "lang": null, "expected": "ελληνικά 5"}
+{"input": "Русский текст 42", "lang": null, "expected": "русский текст 42"}
+{"input": "हिन्दी में 5 शब्द", "lang": null, "expected": "हिन्दी में 5 शब्द"}
+{"input": "किताब 12 रुपये", "lang": null, "expected": "किताब 12 रुपये"}
+{"input": "क़िला ज़रूर", "lang": null, "expected": "क़िला ज़रूर"}
+{"input": "日本語 3 つ", "lang": null, "expected": "日本語 3 つ"}
+{"input": "東京は2024年", "lang": null, "expected": "東京は2024年"}
+{"input": "中文 100 个", "lang": null, "expected": "中文 100 个"}
+{"input": "我有3个苹果", "lang": null, "expected": "我有3个苹果"}
+{"input": "١٢٣ arabic digits", "lang": null, "expected": "١٢٣ arabic digits"}
+{"input": "２０２４ fullwidth", "lang": null, "expected": "2024 fullwidth"}
+{"input": "x² ½ ①", "lang": null, "expected": "x2 1 2 1"}
+{"input": "e-mail und so", "lang": null, "expected": "e mail und so"}
+{"input": "o'clock 3", "lang": null, "expected": "o clock 3"}
+{"input": "50/50", "lang": null, "expected": "50 50"}
+{"input": "3.14", "lang": null, "expected": "3 14"}
+{"input": "-5 Grad", "lang": null, "expected": "5 grad"}
+{"input": "+33 1 23 45 67 89", "lang": null, "expected": "33 1 23 45 67 89"}
+{"input": "tab\tsep", "lang": null, "expected": "tab sep"}
+{"input": "line\nbreak", "lang": null, "expected": "line break"}
+{"input": "😀 emoji", "lang": null, "expected": "emoji"}
+{"input": "UPPER lower MiXeD", "lang": null, "expected": "upper lower mixed"}
+{"input": "11111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111", "lang": "de", "expected": "11111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111"}
+{"input": "1 000 000 000", "lang": "de", "expected": "eintausend null"}
+{"input": "1 000 000", "lang": "fr", "expected": "mille zéro"}
+{"input": "20 000 000 Menschen", "lang": "de", "expected": "zwanzigtausend null menschen"}
+{"input": "80 ans", "lang": "fr", "expected": "quatre-vingts ans"}
+{"input": "71 años", "lang": "es", "expected": "setenta y uno años"}
+{"input": "1e10", "lang": "de", "expected": "einsezehn"}
