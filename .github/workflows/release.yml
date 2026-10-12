@@ -1,18 +1,16 @@
 # Builds the sdist and wheel, tests the built wheel, and publishes both to PyPI with trusted publishing
 # (OIDC; no API tokens or secrets).
 #
-# BEFORE the first v* tag is pushed, PyPI must have this trusted publisher (a "pending" publisher if the
-# `asr-normalizer` project does not exist on PyPI yet). This file does not register it; someone has to, on PyPI:
-#   owner:       MatiasVoldbyDrejer
+# BEFORE the first release, PyPI must have this trusted publisher (a "pending" publisher while the
+# `asr-normalizer` project does not exist on PyPI yet). This file does not register it; the PyPI project
+# owner (Hugging Face) does, after this repository has been transferred to the `huggingface` GitHub org:
+#   owner:       huggingface
 #   repository:  asr-normalizer
 #   workflow:    release.yml
 #   environment: pypi
-# After the repository is transferred to the `huggingface` GitHub organization, the PyPI project owner
-# (Hugging Face) must update the binding to owner `huggingface`; until then, publishing from the transferred
-# repository fails.
-#
-# Pushing a tag vX.Y.Z runs build -> test -> publish; the build fails unless X.Y.Z equals the version in the
-# built wheel and sdist. workflow_dispatch runs build and test only: publish runs on tag refs only.
+# The v0.1.0 tag already exists. After the transfer and the registration, run this workflow from that tag
+# (workflow_dispatch with ref v0.1.0, or re-run the tag's run) to publish 0.1.0.
+
 name: Release
 
 on:
