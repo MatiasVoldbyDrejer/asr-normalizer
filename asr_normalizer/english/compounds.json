@@ -1,0 +1,20 @@
+{
+  "\\bet\\s+cetera\\b": "etc",
+  "\\bal\\s+right\\b": "alright",
+  "\\ball\\s+right\\b": "alright",
+  "\\bhow\\s+ever\\b": "however",
+  "\\bwi\\s+fi\\b": "wifi",
+  "\\bhi\\s+fi\\b": "hifi",
+  "\\blo\\s+fi\\b": "lofi",
+  "\\bsci\\s+fi\\b": "scifi",
+  "\\be\\s+mail\\b": "email",
+  "\\be\\s+book\\b": "ebook",
+  "\\be\\s+commerce\\b": "ecommerce",
+  "\\bx\\s+ray\\b": "xray",
+  "\\bt\\s+shirt\\b": "tshirt",
+  "\\ba\\s+m\\b": "am",
+  "\\bp\\s+m\\b": "pm",
+  "\\bo\\s+k\\b": "okay",
+  "\\bo+h+\\b": "oh",
+  "\\booo+\\b": "oh"
+}
